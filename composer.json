@@ -1,0 +1,14 @@
+{
+    "name": "BarryCarlyon/atech",
+    "description": "ATech Media Suite of Products API Access",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Barry Carlyon",
+            "email": "barry@barrycarlyon.co.uk"
+        }
+    ],
+    "require": {
+
+    }
+}
