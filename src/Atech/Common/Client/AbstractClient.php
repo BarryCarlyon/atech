@@ -23,19 +23,21 @@ class AbstractClient {
 	private $hostname;
 	public $http_code;
 
-    protected function build($url, $apiuser, $apikey) {
+    protected function build($url, $apiuser, $apikey)
+    {
         $this->url = $url;
         list($this->hostname, $this->apiuser) = explode('/', $apiuser);
         $this->apikey = $apikey;
     }
 
-	private function request($url, $body = '', $method = 0) {
+	private function request($url, $body = '', $method = 0)
+    {
 		$ch = curl_init($this->url . $url);
 
 		if ($method == 2) {
 			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'DELETE');
 		} else if ($method == 1) {
-			curl_setopt($ch, CURLOPT_POST, TRUE);
+			curl_setopt($ch, CURLOPT_POST, true);
 			curl_setopt($ch, CURLOPT_POSTFIELDS, $body);
 		}
 		$headers = array(
@@ -54,13 +56,13 @@ class AbstractClient {
 		fwrite($handle, print_r($response,true));
 		fclose($handle);
 
-		if ($response === FALSE) {
+		if ($response === false) {
 			// no response
 			throw new \Exception(curl_error($ch));
 		}
 
 		$code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-		libxml_use_internal_errors(TRUE);
+		libxml_use_internal_errors(true);
 
 		curl_close($ch);
 
@@ -100,7 +102,8 @@ class AbstractClient {
 	/**
 	calls
 	*/
-	protected function get($url, $is_set = FALSE) {
+	protected function get($url, $is_set = false)
+    {
 		$resp = $this->request($url);
 		// is a set expected
 		if ($is_set) {
@@ -115,25 +118,28 @@ class AbstractClient {
 		}
 		return $resp;
 	}
-	protected function post($url, $body, $is_set = FALSE) {
+	protected function post($url, $body, $is_set = false)
+    {
 		return $this->request($url, $body, 1);
 	}
-	protected function delete($url) {
+	protected function delete($url)
+    {
 		$this->request($url, null, 2);
 		if ($this->http_code == 200) {
-			return TRUE;
+			return true;
 		}
 	}
 
 	/**
 	Utility
 	*/
-	public function readHeader($ch, $string) {
+	public function readHeader($ch, $string)
+    {
 		$handle = fopen('header', 'a');
 		fwrite($handle, print_r($string,true));
 		fclose($handle);
 /*
-		if (strpos($string, 'Location:') !== FALSE) {
+		if (strpos($string, 'Location:') !== false) {
 			$this->location = rtrim(str_replace('Location: ', '', $string));
 		}
 		*/
