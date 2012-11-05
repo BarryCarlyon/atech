@@ -146,7 +146,7 @@ class AbstractClient
     */
     protected function get($url, $is_set = false)
     {
-        $resp = $this->request($url);
+        $resp = $this->_request($url);
         // is a set expected
         if ($is_set) {
             // check if a set is returned
