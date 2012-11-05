@@ -20,5 +20,8 @@ use Atech\Common\Client\AbstractClient;
 
 class CodebaseClient extends AbstractClient
 {
-	
+	function __construct($username, $apikey)
+	{
+
+	}
 }
