@@ -94,7 +94,8 @@ class CodebaseClient extends AbstractClient
     /**
     * Create a Project
     *
-    * @param string $project_name project name, helps to form the short name too, which is returned
+    * @param string $project_name project name, 
+    *                helps to form the short name too, which is returned
     *
     * @return a project object
     */
@@ -119,7 +120,8 @@ class CodebaseClient extends AbstractClient
     /**
     * Project Groups
     *
-    * @return array of group objects (containg and dynamic ID (can change) and the name)
+    * @return array of group objects
+    *               (containinng a dynamic ID (can change) and the name)
     */
     public function projectGroups()
     {
@@ -130,7 +132,9 @@ class CodebaseClient extends AbstractClient
     * Project User Assignments
     *
     * @param string $permalink permalink to project
-    * @param array  $users     user ID's to assign to project (overrides existing), leave blank to get current assignments
+    * @param array  $users     user ID's to assign to project
+    *                          (overrides existing),
+    *                          leave blank to get current assignments
     *
     * @return user objects
     */
@@ -174,7 +178,9 @@ class CodebaseClient extends AbstractClient
     */
     public function createRepository($permalink, $repo_name, $repo_type = 'git')
     {
-        $xml = '<repository><name>' . $repo_name . '</name><scm>' . $repo_type . '</scm></repository>';
+        $xml = '<repository><name>' . $repo_name . '</name>
+            <scm>' . $repo_type . '</scm>
+        </repository>';
         return $this->post($permalink . '/repositories', $xml, 'repository');
     }
 
@@ -211,8 +217,10 @@ class CodebaseClient extends AbstractClient
     * @param string $permalink project shortname/permalink
     * @param string $repo      repo shortname/permalink
     * @param string $ref       refernce or revision to fetch
-    *                          ref in this context can be a branch name, tag name or commit reference.
-    *                          If specified it will show the commits from that point in your history.
+    *                          ref in this context can be a branch name,
+    *                          tag name or commit reference.
+    *                          If specified it will show the commits from
+    *                          that point in your history.
     * @param string $file      optional file to get specific history for
     *
     * @return array a set of commits

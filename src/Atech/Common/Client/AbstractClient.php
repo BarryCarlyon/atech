@@ -66,7 +66,9 @@ class AbstractClient
         $headers = array(
             'Content-Type: application/xml',
             'Accept: application/xml',
-            'Authorization: Basic ' . base64_encode($this->_hostname .'/' . $this->_apiuser . ':'. $this->_apikey)
+            'Authorization: Basic ' . base64_encode(
+                $this->_hostname .'/' . $this->_apiuser . ':'. $this->_apikey
+            )
         );
 
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
@@ -94,7 +96,13 @@ class AbstractClient
         if ($code == 200 || $code == 201) {
             // convert
             try {
-                $response = json_decode(json_encode(simplexml_load_string($response, 'SimpleXMLElement', LIBXML_NOCDATA)));
+                $response = json_decode(
+                    json_encode(
+                        simplexml_load_string(
+                            $response, 'SimpleXMLElement', LIBXML_NOCDATA
+                        )
+                    )
+                );
             } catch (\Exception $error2) {
                 throw new \Exception('XML was not returned, an error has occured');
             }
@@ -108,7 +116,13 @@ class AbstractClient
             throw new \Exception('Conflict, Unmet Dependancies');
         } elseif ($code == 422) {
             try {
-                $response = json_decode(json_encode(simplexml_load_string($response, 'SimpleXMLElement', LIBXML_NOCDATA)));
+                $response = json_decode(
+                    json_encode(
+                        simplexml_load_string(
+                            $response, 'SimpleXMLElement', LIBXML_NOCDATA
+                        )
+                    )
+                );
                 $error = $response->error;
             } catch (\Exception $error2) {
                 $error = 'Unprocessable Entity';
