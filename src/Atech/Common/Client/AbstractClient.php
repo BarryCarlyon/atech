@@ -17,10 +17,17 @@
 namespace Atech\Common\Client;
 
 class AbstractClient {
-	protected $apiuser;
-	protected $apikey;
-	protected $hostname;
+    private $url;
+	private $apiuser;
+	private $apikey;
+	private $hostname;
 	public $http_code;
+
+    protected function build($url, $apiuser, $apikey) {
+        $this->url = $url;
+        $this->apiuser = $apiuser;
+        $this->apikey = $apikey;
+    }
 
 	private function request($url, $body = '', $method = 0) {
 		$ch = curl_init($this->url . $url);
@@ -50,7 +57,7 @@ class AbstractClient {
 
 		if ($response === FALSE) {
 			// no response
-			throw new Exception(curl_error($ch));
+			throw new \Exception(curl_error($ch));
 		}
 
 		$code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
@@ -65,16 +72,16 @@ class AbstractClient {
 			try {
 				$response = json_decode(json_encode(simplexml_load_string($response, 'SimpleXMLElement', LIBXML_NOCDATA)));
 			} catch (\Exception $error2) {
-				throw new Exception('XML was not returned, an error has occured');
+				throw new \Exception('XML was not returned, an error has occured');
 			}
 		} else if ($code == 404) {
-			throw new Exception('Resource Not Found');
+			throw new \Exception('Resource Not Found');
 		} else if ($code == 403) {
-			throw new Exception('Access Denied');
+			throw new \Exception('Access Denied');
 		} else if ($code == 406) {
-			throw new Exception('Wrong HTTP Verb');
+			throw new \Exception('Wrong HTTP Verb');
 		} else if ($code == 409) {
-			throw new Exception('Conflict, Unmet Dependancies');
+			throw new \Exception('Conflict, Unmet Dependancies');
 		} else if ($code == 422) {
 			try {
 				$response = json_decode(json_encode(simplexml_load_string($response, 'SimpleXMLElement', LIBXML_NOCDATA)));
@@ -82,10 +89,10 @@ class AbstractClient {
 			} catch (\Exception $error2) {
 				$error = 'Unprocessable Entity';
 			}
-			throw new Exception($error);
+			throw new \Exception($error);
 		} else {
 			// error
-			throw new Exception('Unknown Error HTTP Code: ' . $code);
+			throw new \Exception('Unknown Error HTTP Code: ' . $code);
 		}
 
 		return $response;
