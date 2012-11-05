@@ -25,7 +25,7 @@ class AbstractClient {
 
     protected function build($url, $apiuser, $apikey) {
         $this->url = $url;
-        $this->apiuser = $apiuser;
+        list($this->hostname, $this->apiuser) = explode('/', $apiuser);
         $this->apikey = $apikey;
     }
 
@@ -53,7 +53,6 @@ class AbstractClient {
 		$handle = fopen('raw', 'a');
 		fwrite($handle, print_r($response,true));
 		fclose($handle);
-
 
 		if ($response === FALSE) {
 			// no response
