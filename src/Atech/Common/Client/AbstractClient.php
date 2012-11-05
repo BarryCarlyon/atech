@@ -16,134 +16,183 @@
 
 namespace Atech\Common\Client;
 
-class AbstractClient {
-    private $url;
-	private $apiuser;
-	private $apikey;
-	private $hostname;
-	public $http_code;
+/**
+ * Base Client/HTTP Engine
+ *
+ */
+class AbstractClient
+{
+    private $_url;
+    private $_apiuser;
+    private $_apikey;
+    private $_hostname;
+    public $http_code;
 
+    /**
+    * Spawn
+    *
+    * @param string $url     Base API Url
+    * @param string $apiuser API Username
+    * @param string $apikey  API Key
+    *
+    * @return nothing
+    */
     protected function build($url, $apiuser, $apikey)
     {
-        $this->url = $url;
-        list($this->hostname, $this->apiuser) = explode('/', $apiuser);
-        $this->apikey = $apikey;
+        $this->_url = $url;
+        list($this->_hostname, $this->_apiuser) = explode('/', $apiuser);
+        $this->_apikey = $apikey;
     }
 
-	private function request($url, $body = '', $method = 0)
+    /**
+    * Make a request
+    *
+    * @param string     $url    URL route to call
+    * @param string|xml $body   XML body to pass
+    * @param int        $method which method to call using
+    *
+    * @return the response
+    */
+    private function _request($url, $body = '', $method = 0)
     {
-		$ch = curl_init($this->url . $url);
+        $ch = curl_init($this->_url . $url);
 
-		if ($method == 2) {
-			curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'DELETE');
-		} else if ($method == 1) {
-			curl_setopt($ch, CURLOPT_POST, true);
-			curl_setopt($ch, CURLOPT_POSTFIELDS, $body);
-		}
-		$headers = array(
-			'Content-Type: application/xml',
-			'Accept: application/xml',
-			'Authorization: Basic ' . base64_encode($this->hostname .'/' . $this->apiuser . ':'. $this->apikey)
-		);
+        if ($method == 2) {
+            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'DELETE');
+        } elseif ($method == 1) {
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $body);
+        }
+        $headers = array(
+            'Content-Type: application/xml',
+            'Accept: application/xml',
+            'Authorization: Basic ' . base64_encode($this->_hostname .'/' . $this->_apiuser . ':'. $this->_apikey)
+        );
 
-		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		curl_setopt($ch, CURLOPT_HEADERFUNCTION, array($this, 'readHeader'));
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_HEADERFUNCTION, array($this, 'readHeader'));
 
-		$response = curl_exec($ch);
+        $response = curl_exec($ch);
 
-		$handle = fopen('raw', 'a');
-		fwrite($handle, print_r($response,true));
-		fclose($handle);
+        $handle = fopen('raw', 'a');
+        fwrite($handle, print_r($response, true));
+        fclose($handle);
 
-		if ($response === false) {
-			// no response
-			throw new \Exception(curl_error($ch));
-		}
+        if ($response === false) {
+            // no response
+            throw new \Exception(curl_error($ch));
+        }
 
-		$code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-		libxml_use_internal_errors(true);
+        $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        libxml_use_internal_errors(true);
 
-		curl_close($ch);
+        curl_close($ch);
 
-		$this->http_code = $code;
+        $this->http_code = $code;
 
-		if ($code == 200 || $code == 201) {
-			// convert
-			try {
-				$response = json_decode(json_encode(simplexml_load_string($response, 'SimpleXMLElement', LIBXML_NOCDATA)));
-			} catch (\Exception $error2) {
-				throw new \Exception('XML was not returned, an error has occured');
-			}
-		} else if ($code == 404) {
-			throw new \Exception('Resource Not Found');
-		} else if ($code == 403) {
-			throw new \Exception('Access Denied');
-		} else if ($code == 406) {
-			throw new \Exception('Wrong HTTP Verb');
-		} else if ($code == 409) {
-			throw new \Exception('Conflict, Unmet Dependancies');
-		} else if ($code == 422) {
-			try {
-				$response = json_decode(json_encode(simplexml_load_string($response, 'SimpleXMLElement', LIBXML_NOCDATA)));
-				$error = $response->error;
-			} catch (\Exception $error2) {
-				$error = 'Unprocessable Entity';
-			}
-			throw new \Exception($error);
-		} else {
-			// error
-			throw new \Exception('Unknown Error HTTP Code: ' . $code);
-		}
+        if ($code == 200 || $code == 201) {
+            // convert
+            try {
+                $response = json_decode(json_encode(simplexml_load_string($response, 'SimpleXMLElement', LIBXML_NOCDATA)));
+            } catch (\Exception $error2) {
+                throw new \Exception('XML was not returned, an error has occured');
+            }
+        } elseif ($code == 404) {
+            throw new \Exception('Resource Not Found');
+        } elseif ($code == 403) {
+            throw new \Exception('Access Denied');
+        } elseif ($code == 406) {
+            throw new \Exception('Wrong HTTP Verb');
+        } elseif ($code == 409) {
+            throw new \Exception('Conflict, Unmet Dependancies');
+        } elseif ($code == 422) {
+            try {
+                $response = json_decode(json_encode(simplexml_load_string($response, 'SimpleXMLElement', LIBXML_NOCDATA)));
+                $error = $response->error;
+            } catch (\Exception $error2) {
+                $error = 'Unprocessable Entity';
+            }
+            throw new \Exception($error);
+        } else {
+            // error
+            throw new \Exception('Unknown Error HTTP Code: ' . $code);
+        }
 
-		return $response;
-	}
+        return $response;
+    }
 
-	/**
-	calls
-	*/
-	protected function get($url, $is_set = false)
+    /**
+    * Get Function
+    *
+    * @param string $url    Full URL to call
+    * @param string $is_set response key to catch for group data
+    *
+    * @return the response
+    */
+    protected function get($url, $is_set = false)
     {
-		$resp = $this->request($url);
-		// is a set expected
-		if ($is_set) {
-			// check if a set is returned
-			if (!isset($resp->$is_set)) {
-				// no results
-				$resp->$is_set = array();
-			} else if (!is_int(key($resp->$is_set))) {
-				// its not a set, make it one
-				$resp->$is_set = array($resp->$is_set);
-			}
-		}
-		return $resp;
-	}
-	protected function post($url, $body, $is_set = false)
+        $resp = $this->request($url);
+        // is a set expected
+        if ($is_set) {
+            // check if a set is returned
+            if (!isset($resp->$is_set)) {
+                // no results
+                $resp->$is_set = array();
+            } elseif (!is_int(key($resp->$is_set))) {
+                // its not a set, make it one
+                $resp->$is_set = array($resp->$is_set);
+            }
+        }
+        return $resp;
+    }
+    /**
+    * Post Function
+    *
+    * @param string $url    Full URL to call
+    * @param string $body   Body to pas
+    * @param string $is_set response key to catch for group data
+    *
+    * @return the response
+    */
+    protected function post($url, $body, $is_set = false)
     {
-		return $this->request($url, $body, 1);
-	}
-	protected function delete($url)
+        return $this->request($url, $body, 1);
+    }
+    /**
+    * Delete Function
+    *
+    * @param string $url Full URL to call
+    *
+    * @return the response
+    */
+    protected function delete($url)
     {
-		$this->request($url, null, 2);
-		if ($this->http_code == 200) {
-			return true;
-		}
-	}
+        $this->request($url, null, 2);
+        if ($this->http_code == 200) {
+            return true;
+        }
+    }
 
-	/**
-	Utility
-	*/
-	public function readHeader($ch, $string)
+    /**
+    * Read/Parse Header Function
+    *
+    * @param object $ch     curl object
+    * @param string $string header string
+    *
+    * @return the response
+    */
+    public function readHeader($ch, $string)
     {
-		$handle = fopen('header', 'a');
-		fwrite($handle, print_r($string,true));
-		fclose($handle);
-/*
-		if (strpos($string, 'Location:') !== false) {
-			$this->location = rtrim(str_replace('Location: ', '', $string));
-		}
-		*/
+        $handle = fopen('header', 'a');
+        fwrite($handle, print_r($string, true));
+        fclose($handle);
+        /*
+        if (strpos($string, 'Location:') !== false) {
+            $this->location = rtrim(str_replace('Location: ', '', $string));
+        }
+        */
 
-		return strlen($string);
-	}
+        return strlen($string);
+    }
 }
