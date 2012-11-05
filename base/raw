@@ -1,0 +1,2137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<errors>
+  <error>Couldn't find Project with permalink = testerb</error>
+</errors>
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <project-id type="integer">36239</project-id>
+  <group-id nil="true"></group-id>
+  <icon type="integer">1</icon>
+  <name>testerb</name>
+  <overview nil="true"></overview>
+  <start-page>overview</start-page>
+  <status>active</status>
+  <permalink>testerb</permalink>
+</project>
+ <?xml version="1.0" encoding="UTF-8"?>
+<errors>
+  <error>Short Name has already been taken</error>
+</errors>
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <project-id type="integer">36240</project-id>
+  <group-id nil="true"></group-id>
+  <icon type="integer">1</icon>
+  <name>testerc</name>
+  <overview nil="true"></overview>
+  <start-page>overview</start-page>
+  <status>active</status>
+  <permalink>testerc</permalink>
+</project>
+
+
+here
+
+
+ <?xml version="1.0" encoding="UTF-8"?>
+<errors>
+  <error>Couldn't find Project with permalink = testerc</error>
+</errors>
+<?xml version="1.0" encoding="UTF-8"?>
+<project-groups type="array"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<project-groups type="array">
+  <project-group>
+    <id type="integer">0</id>
+    <label>Customer Sites</label>
+  </project-group>
+  <project-group>
+    <id type="integer">1</id>
+    <label>Dead Projects</label>
+  </project-group>
+  <project-group>
+    <id type="integer">2</id>
+    <label>Misc Projects</label>
+  </project-group>
+  <project-group>
+    <id type="integer">3</id>
+    <label>NewMedias Sites</label>
+  </project-group>
+  <project-group>
+    <id type="integer">4</id>
+    <label>WordPress Plugins</label>
+  </project-group>
+</project-groups>
+<?xml version="1.0" encoding="UTF-8"?>
+<project-groups type="array">
+  <project-group>
+    <id type="integer">0</id>
+    <label>Customer Sites</label>
+  </project-group>
+  <project-group>
+    <id type="integer">1</id>
+    <label>Dead Projects</label>
+  </project-group>
+  <project-group>
+    <id type="integer">2</id>
+    <label>Misc Projects</label>
+  </project-group>
+  <project-group>
+    <id type="integer">3</id>
+    <label>NewMedias Sites</label>
+  </project-group>
+  <project-group>
+    <id type="integer">4</id>
+    <label>WordPress Plugins</label>
+  </project-group>
+</project-groups>
+<?xml version="1.0" encoding="UTF-8"?>
+<project-groups type="array"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<project-groups type="array"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<errors>
+  <error>Couldn't find Project with permalink = testerc</error>
+</errors>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Not Found!</title>
+  <link href="/stylesheets/sub.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+
+<body class='error'>
+  <!-- This file lives in public/500.html -->
+  <div id='header'>
+    <div class='inner'>
+      <h1><span class='error'>Page does not exist</span></h1>
+    </div>
+  </div>
+  <div id='content'>
+    <div class='inner'>
+        <div class="box">
+          <p class="error">
+            The page you have requested was not found. Perhaps the URL you have entered
+            is incorrect or you have followed an old link which no longer exists.
+          </p>
+          
+          <p class="error">If you believe there should be a page here please <a href="mailto:support@codebasehq.com">contact support</a> who will be able to investigate the issue further for you.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+<?xml version="1.0" encoding="UTF-8"?>
+<commits type="array">
+  <commit>
+    <ref>6e292733e811f64f0450bc06764e375f7757a9d2</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:21:50+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:21:50+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Merge branch 'dev'</message>
+    <parent-ref>1e4a9958713f42ab6e806f5c279fc15e4a0e5c74</parent-ref>
+    <tree-ref>38fcde59c0dbe1bbbd3c9aa1cdfd164bf4f79efd</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>52b14186da5b7b1fb47cdf44679d5894e0c9b867</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:19:58+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:19:58+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Update WordPress properly</message>
+    <parent-ref>b32c759dd8b4e2e06ea91255393b4524551e3344</parent-ref>
+    <tree-ref>38fcde59c0dbe1bbbd3c9aa1cdfd164bf4f79efd</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>1e4a9958713f42ab6e806f5c279fc15e4a0e5c74</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:13:37+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:13:37+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Merge branch 'dev'
+
+Conflicts:
+public_html/cms/wp-content/plugins/download-monitor/admin/categories.php
+public_html/cms/wp-content/plugins/download-monitor/classes/download_taxonomies.class.php
+public_html/cms/wp-content/plugins/download-monitor/classes/downloadable_file.class.php
+public_html/cms/wp-content/plugins/download-monitor/functions.inc.php
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-code.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-excel.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-film.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-flash-movie.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-illustrator.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-image.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-music.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-pdf.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-photoshop.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-powerpoint.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-text-image.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-text.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-word-text.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-zipper.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/readme.txt
+public_html/cms/wp-content/plugins/download-monitor/init.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/connectors/jqueryFileTree.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/connectors/jqueryFileTreeDir.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/application.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/code.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/css.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/db.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/directory.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/doc.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/file.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/film.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/flash.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/folder_open.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/html.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/java.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/linux.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/music.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/pdf.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/php.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/picture.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/ppt.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/psd.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/ruby.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/script.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/spinner.gif
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/txt.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/xls.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/zip.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/jqueryFileTree.css
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/jqueryFileTree.js
+public_html/cms/wp-content/plugins/download-monitor/languages/german alt/wp-download_monitor-de_DE.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/german alt/wp-download_monitor-de_DE.po
+public_html/cms/wp-content/plugins/download-monitor/languages/polish alt/wp-download_monitor-pl_PL.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/polish alt/wp-download_monitor-pl_PL.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-cs_CZ.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-cs_CZ.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-de_DE.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-de_DE.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-fr_FR.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-fr_FR.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-it_IT.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-it_IT.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-ja.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-ja.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-pl_PL.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-pl_PL.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-zh_CN.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-zh_CN.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor.po
+public_html/cms/wp-content/plugins/download-monitor/legacy_shortcodes.php
+public_html/cms/wp-content/plugins/download-monitor/page-addon/download-monitor-page-addon.php
+public_html/cms/wp-content/plugins/download-monitor/readme.txt
+public_html/cms/wp-content/plugins/download-monitor/shortcodes.php
+public_html/cms/wp-content/plugins/download-monitor/wp-download_monitor.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-dropbox-facade.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-file-list.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-config.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database-core.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database-plugins.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-extension-manager.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-output.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Dropbox_API/src/Dropbox/OAuth/PEAR.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-ar.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-ar.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-fa_IR.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-fa_IR.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-hu_HU.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-hu_HU.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-id_ID.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-id_ID.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_CN.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_CN.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_TW.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_TW.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd.pot
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-monitor.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-options.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-premium.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-progress.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/readme.txt
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/screenshot-1.png
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/screenshot-2.png
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/uninstall.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/wp-backup-to-dropbox.php</message>
+    <parent-ref>dfeecccacd287770e652743aeb6603cc0e763f2e</parent-ref>
+    <tree-ref>a0b8833c96d57b7d4dc08403f193e9ccdab0fbd9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>b32c759dd8b4e2e06ea91255393b4524551e3344</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:03:36+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:03:36+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>updated wordpress to 3.4.2 added gitignore update wp dl monitor and dp backto to dropbox</message>
+    <parent-ref>51d111ea5e90de6a2ff2f264c33234e7ebedb335</parent-ref>
+    <tree-ref>a0b8833c96d57b7d4dc08403f193e9ccdab0fbd9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>51d111ea5e90de6a2ff2f264c33234e7ebedb335</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T23:09:26+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T23:09:26+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>6684bf67247d6a1c9957de681cf626967b602cb0</parent-ref>
+    <tree-ref>6f221c20f29eaaa313821f14896b19eeac69f496</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>dfeecccacd287770e652743aeb6603cc0e763f2e</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T23:09:15+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T23:09:15+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Twitter Bootsrap licenses</message>
+    <parent-ref>e65ceb5cf3d4e6d15fbd5f34f3c8e72faf24b306</parent-ref>
+    <tree-ref>917f7618b0dd3863ec2fcacea4c9526e83802be1</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>e65ceb5cf3d4e6d15fbd5f34f3c8e72faf24b306</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:40:35+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:40:35+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>bootstrap merge</message>
+    <parent-ref>8f9dad03588752069849284f987d54a6383bf5ce</parent-ref>
+    <tree-ref>a772a6c082672cbf428f12d221a537b0f9aa66f6</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>8f9dad03588752069849284f987d54a6383bf5ce</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:36:26+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:36:26+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>04f41fc4cd841234110756aa187b082a79cad16f</parent-ref>
+    <tree-ref>14923b18d5f15a4a9d0f2ddcb7971f7e8f8fcbf9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>6684bf67247d6a1c9957de681cf626967b602cb0</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:36:07+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:36:07+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>stick a div wrap on it</message>
+    <parent-ref>9829748b87c3f7eabd22fa1051aa192828211f70</parent-ref>
+    <tree-ref>23cb33ce979b90f3be5b18d26ac895750637119f</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>04f41fc4cd841234110756aa187b082a79cad16f</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:31:48+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:31:48+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>b6fed521320cfbc113af701485184efab7619088</parent-ref>
+    <tree-ref>bd12d1d77ece9ee25fe7bf9cf9a332f2cd31aa2a</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>9829748b87c3f7eabd22fa1051aa192828211f70</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:31:42+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:31:42+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Base alignment</message>
+    <parent-ref>fdac38a699dcfe4e7b22beb7d852617e19d912c3</parent-ref>
+    <tree-ref>8bf7a97a7ec0749e864cbec4c035626b6a6aba71</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>fdac38a699dcfe4e7b22beb7d852617e19d912c3</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:20:29+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:20:29+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>htaccess merge</message>
+    <parent-ref>68a235bf918f0a35eb323be3883be1298d738948</parent-ref>
+    <tree-ref>7a779bbc2af2475faec2ddf5d05719dd6a5c7b8f</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>b6fed521320cfbc113af701485184efab7619088</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:20:02+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:20:02+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>.htaccess</message>
+    <parent-ref>86afa6392acb9c86e59e1ebe195904160b54c378</parent-ref>
+    <tree-ref>62dcd49e8e2e794a9cbf64f10cb0f54372db9c39</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>86afa6392acb9c86e59e1ebe195904160b54c378</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:18:33+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:18:33+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>resources</message>
+    <parent-ref>559c2daddb02e67e2af2e0de002267e620a10370</parent-ref>
+    <tree-ref>e9113866a518ccee432a315320547c1e3d086bef</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>559c2daddb02e67e2af2e0de002267e620a10370</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:15:20+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:15:20+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Missing Config</message>
+    <parent-ref>21409c7f06dec2a9b5ee0adfc72438935d3adcfa</parent-ref>
+    <tree-ref>efbc16f367ddc6e12cce63a08fd91920d43461e4</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>68a235bf918f0a35eb323be3883be1298d738948</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:15:18+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:15:18+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Missing config</message>
+    <parent-ref>7b2e9abd155d0dd0cca77a374e51973145c9e3f3</parent-ref>
+    <tree-ref>4eee2c3acb2776ee858ac3ab7cc623e02318fb4d</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>7b2e9abd155d0dd0cca77a374e51973145c9e3f3</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:09:17+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:09:17+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Location Data Current Build</message>
+    <parent-ref>2c8e642ebd93abd5c0256de19774fce8a8a69f37</parent-ref>
+    <tree-ref>a45a13db45fe7827c1f4f6d207636e14d8e3522d</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>21409c7f06dec2a9b5ee0adfc72438935d3adcfa</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:08:04+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:08:04+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merging additional plguins</message>
+    <parent-ref>964763cdd85294ea0b42b33a5dea0e1c13ff45e0</parent-ref>
+    <tree-ref>cf8ed6ffa2ce4d4adee16bc782d386ac08abf2ca</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>2c8e642ebd93abd5c0256de19774fce8a8a69f37</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:05:00+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:05:00+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Additional Plugins</message>
+    <parent-ref>9dc7ff90cf890c0ddd5f5374345a63c9150a1167</parent-ref>
+    <tree-ref>dba71905003af0b74e0866cccc8a8849c137d18a</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>964763cdd85294ea0b42b33a5dea0e1c13ff45e0</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T21:53:00+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T21:53:00+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>theme css merge</message>
+    <parent-ref>76c7e439370f2decd7d21bd93c7c52b164d9fa2b</parent-ref>
+    <tree-ref>03cd49a116b6f688e0f653ce9868954780ac1177</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+</commits>
+<?xml version="1.0" encoding="UTF-8"?>
+<commits type="array">
+  <commit>
+    <ref>6e292733e811f64f0450bc06764e375f7757a9d2</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:21:50+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:21:50+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Merge branch 'dev'</message>
+    <parent-ref>1e4a9958713f42ab6e806f5c279fc15e4a0e5c74</parent-ref>
+    <tree-ref>38fcde59c0dbe1bbbd3c9aa1cdfd164bf4f79efd</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>52b14186da5b7b1fb47cdf44679d5894e0c9b867</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:19:58+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:19:58+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Update WordPress properly</message>
+    <parent-ref>b32c759dd8b4e2e06ea91255393b4524551e3344</parent-ref>
+    <tree-ref>38fcde59c0dbe1bbbd3c9aa1cdfd164bf4f79efd</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>1e4a9958713f42ab6e806f5c279fc15e4a0e5c74</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:13:37+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:13:37+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Merge branch 'dev'
+
+Conflicts:
+public_html/cms/wp-content/plugins/download-monitor/admin/categories.php
+public_html/cms/wp-content/plugins/download-monitor/classes/download_taxonomies.class.php
+public_html/cms/wp-content/plugins/download-monitor/classes/downloadable_file.class.php
+public_html/cms/wp-content/plugins/download-monitor/functions.inc.php
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-code.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-excel.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-film.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-flash-movie.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-illustrator.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-image.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-music.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-pdf.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-photoshop.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-powerpoint.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-text-image.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-text.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-word-text.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-zipper.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/readme.txt
+public_html/cms/wp-content/plugins/download-monitor/init.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/connectors/jqueryFileTree.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/connectors/jqueryFileTreeDir.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/application.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/code.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/css.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/db.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/directory.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/doc.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/file.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/film.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/flash.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/folder_open.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/html.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/java.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/linux.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/music.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/pdf.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/php.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/picture.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/ppt.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/psd.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/ruby.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/script.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/spinner.gif
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/txt.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/xls.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/zip.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/jqueryFileTree.css
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/jqueryFileTree.js
+public_html/cms/wp-content/plugins/download-monitor/languages/german alt/wp-download_monitor-de_DE.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/german alt/wp-download_monitor-de_DE.po
+public_html/cms/wp-content/plugins/download-monitor/languages/polish alt/wp-download_monitor-pl_PL.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/polish alt/wp-download_monitor-pl_PL.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-cs_CZ.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-cs_CZ.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-de_DE.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-de_DE.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-fr_FR.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-fr_FR.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-it_IT.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-it_IT.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-ja.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-ja.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-pl_PL.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-pl_PL.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-zh_CN.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-zh_CN.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor.po
+public_html/cms/wp-content/plugins/download-monitor/legacy_shortcodes.php
+public_html/cms/wp-content/plugins/download-monitor/page-addon/download-monitor-page-addon.php
+public_html/cms/wp-content/plugins/download-monitor/readme.txt
+public_html/cms/wp-content/plugins/download-monitor/shortcodes.php
+public_html/cms/wp-content/plugins/download-monitor/wp-download_monitor.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-dropbox-facade.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-file-list.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-config.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database-core.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database-plugins.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-extension-manager.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-output.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Dropbox_API/src/Dropbox/OAuth/PEAR.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-ar.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-ar.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-fa_IR.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-fa_IR.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-hu_HU.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-hu_HU.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-id_ID.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-id_ID.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_CN.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_CN.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_TW.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_TW.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd.pot
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-monitor.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-options.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-premium.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-progress.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/readme.txt
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/screenshot-1.png
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/screenshot-2.png
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/uninstall.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/wp-backup-to-dropbox.php</message>
+    <parent-ref>dfeecccacd287770e652743aeb6603cc0e763f2e</parent-ref>
+    <tree-ref>a0b8833c96d57b7d4dc08403f193e9ccdab0fbd9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>b32c759dd8b4e2e06ea91255393b4524551e3344</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:03:36+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:03:36+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>updated wordpress to 3.4.2 added gitignore update wp dl monitor and dp backto to dropbox</message>
+    <parent-ref>51d111ea5e90de6a2ff2f264c33234e7ebedb335</parent-ref>
+    <tree-ref>a0b8833c96d57b7d4dc08403f193e9ccdab0fbd9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>51d111ea5e90de6a2ff2f264c33234e7ebedb335</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T23:09:26+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T23:09:26+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>6684bf67247d6a1c9957de681cf626967b602cb0</parent-ref>
+    <tree-ref>6f221c20f29eaaa313821f14896b19eeac69f496</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>dfeecccacd287770e652743aeb6603cc0e763f2e</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T23:09:15+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T23:09:15+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Twitter Bootsrap licenses</message>
+    <parent-ref>e65ceb5cf3d4e6d15fbd5f34f3c8e72faf24b306</parent-ref>
+    <tree-ref>917f7618b0dd3863ec2fcacea4c9526e83802be1</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>e65ceb5cf3d4e6d15fbd5f34f3c8e72faf24b306</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:40:35+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:40:35+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>bootstrap merge</message>
+    <parent-ref>8f9dad03588752069849284f987d54a6383bf5ce</parent-ref>
+    <tree-ref>a772a6c082672cbf428f12d221a537b0f9aa66f6</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>8f9dad03588752069849284f987d54a6383bf5ce</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:36:26+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:36:26+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>04f41fc4cd841234110756aa187b082a79cad16f</parent-ref>
+    <tree-ref>14923b18d5f15a4a9d0f2ddcb7971f7e8f8fcbf9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>6684bf67247d6a1c9957de681cf626967b602cb0</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:36:07+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:36:07+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>stick a div wrap on it</message>
+    <parent-ref>9829748b87c3f7eabd22fa1051aa192828211f70</parent-ref>
+    <tree-ref>23cb33ce979b90f3be5b18d26ac895750637119f</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>04f41fc4cd841234110756aa187b082a79cad16f</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:31:48+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:31:48+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>b6fed521320cfbc113af701485184efab7619088</parent-ref>
+    <tree-ref>bd12d1d77ece9ee25fe7bf9cf9a332f2cd31aa2a</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>9829748b87c3f7eabd22fa1051aa192828211f70</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:31:42+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:31:42+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Base alignment</message>
+    <parent-ref>fdac38a699dcfe4e7b22beb7d852617e19d912c3</parent-ref>
+    <tree-ref>8bf7a97a7ec0749e864cbec4c035626b6a6aba71</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>fdac38a699dcfe4e7b22beb7d852617e19d912c3</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:20:29+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:20:29+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>htaccess merge</message>
+    <parent-ref>68a235bf918f0a35eb323be3883be1298d738948</parent-ref>
+    <tree-ref>7a779bbc2af2475faec2ddf5d05719dd6a5c7b8f</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>b6fed521320cfbc113af701485184efab7619088</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:20:02+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:20:02+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>.htaccess</message>
+    <parent-ref>86afa6392acb9c86e59e1ebe195904160b54c378</parent-ref>
+    <tree-ref>62dcd49e8e2e794a9cbf64f10cb0f54372db9c39</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>86afa6392acb9c86e59e1ebe195904160b54c378</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:18:33+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:18:33+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>resources</message>
+    <parent-ref>559c2daddb02e67e2af2e0de002267e620a10370</parent-ref>
+    <tree-ref>e9113866a518ccee432a315320547c1e3d086bef</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>559c2daddb02e67e2af2e0de002267e620a10370</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:15:20+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:15:20+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Missing Config</message>
+    <parent-ref>21409c7f06dec2a9b5ee0adfc72438935d3adcfa</parent-ref>
+    <tree-ref>efbc16f367ddc6e12cce63a08fd91920d43461e4</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>68a235bf918f0a35eb323be3883be1298d738948</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:15:18+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:15:18+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Missing config</message>
+    <parent-ref>7b2e9abd155d0dd0cca77a374e51973145c9e3f3</parent-ref>
+    <tree-ref>4eee2c3acb2776ee858ac3ab7cc623e02318fb4d</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>7b2e9abd155d0dd0cca77a374e51973145c9e3f3</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:09:17+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:09:17+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Location Data Current Build</message>
+    <parent-ref>2c8e642ebd93abd5c0256de19774fce8a8a69f37</parent-ref>
+    <tree-ref>a45a13db45fe7827c1f4f6d207636e14d8e3522d</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>21409c7f06dec2a9b5ee0adfc72438935d3adcfa</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:08:04+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:08:04+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merging additional plguins</message>
+    <parent-ref>964763cdd85294ea0b42b33a5dea0e1c13ff45e0</parent-ref>
+    <tree-ref>cf8ed6ffa2ce4d4adee16bc782d386ac08abf2ca</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>2c8e642ebd93abd5c0256de19774fce8a8a69f37</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:05:00+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:05:00+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Additional Plugins</message>
+    <parent-ref>9dc7ff90cf890c0ddd5f5374345a63c9150a1167</parent-ref>
+    <tree-ref>dba71905003af0b74e0866cccc8a8849c137d18a</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>964763cdd85294ea0b42b33a5dea0e1c13ff45e0</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T21:53:00+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T21:53:00+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>theme css merge</message>
+    <parent-ref>76c7e439370f2decd7d21bd93c7c52b164d9fa2b</parent-ref>
+    <tree-ref>03cd49a116b6f688e0f653ce9868954780ac1177</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+</commits>
+<?xml version="1.0" encoding="UTF-8"?>
+<errors>
+  <error>Ref could not be found</error>
+</errors>
+<?xml version="1.0" encoding="UTF-8"?>
+<commits type="array">
+  <commit>
+    <ref>6e292733e811f64f0450bc06764e375f7757a9d2</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:21:50+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:21:50+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Merge branch 'dev'</message>
+    <parent-ref>1e4a9958713f42ab6e806f5c279fc15e4a0e5c74</parent-ref>
+    <tree-ref>38fcde59c0dbe1bbbd3c9aa1cdfd164bf4f79efd</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>52b14186da5b7b1fb47cdf44679d5894e0c9b867</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:19:58+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:19:58+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Update WordPress properly</message>
+    <parent-ref>b32c759dd8b4e2e06ea91255393b4524551e3344</parent-ref>
+    <tree-ref>38fcde59c0dbe1bbbd3c9aa1cdfd164bf4f79efd</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>1e4a9958713f42ab6e806f5c279fc15e4a0e5c74</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:13:37+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:13:37+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Merge branch 'dev'
+
+Conflicts:
+public_html/cms/wp-content/plugins/download-monitor/admin/categories.php
+public_html/cms/wp-content/plugins/download-monitor/classes/download_taxonomies.class.php
+public_html/cms/wp-content/plugins/download-monitor/classes/downloadable_file.class.php
+public_html/cms/wp-content/plugins/download-monitor/functions.inc.php
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-code.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-excel.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-film.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-flash-movie.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-illustrator.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-image.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-music.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-pdf.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-photoshop.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-powerpoint.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-text-image.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-text.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-word-text.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-zipper.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/readme.txt
+public_html/cms/wp-content/plugins/download-monitor/init.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/connectors/jqueryFileTree.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/connectors/jqueryFileTreeDir.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/application.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/code.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/css.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/db.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/directory.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/doc.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/file.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/film.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/flash.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/folder_open.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/html.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/java.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/linux.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/music.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/pdf.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/php.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/picture.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/ppt.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/psd.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/ruby.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/script.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/spinner.gif
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/txt.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/xls.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/zip.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/jqueryFileTree.css
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/jqueryFileTree.js
+public_html/cms/wp-content/plugins/download-monitor/languages/german alt/wp-download_monitor-de_DE.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/german alt/wp-download_monitor-de_DE.po
+public_html/cms/wp-content/plugins/download-monitor/languages/polish alt/wp-download_monitor-pl_PL.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/polish alt/wp-download_monitor-pl_PL.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-cs_CZ.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-cs_CZ.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-de_DE.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-de_DE.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-fr_FR.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-fr_FR.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-it_IT.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-it_IT.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-ja.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-ja.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-pl_PL.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-pl_PL.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-zh_CN.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-zh_CN.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor.po
+public_html/cms/wp-content/plugins/download-monitor/legacy_shortcodes.php
+public_html/cms/wp-content/plugins/download-monitor/page-addon/download-monitor-page-addon.php
+public_html/cms/wp-content/plugins/download-monitor/readme.txt
+public_html/cms/wp-content/plugins/download-monitor/shortcodes.php
+public_html/cms/wp-content/plugins/download-monitor/wp-download_monitor.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-dropbox-facade.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-file-list.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-config.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database-core.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database-plugins.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-extension-manager.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-output.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Dropbox_API/src/Dropbox/OAuth/PEAR.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-ar.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-ar.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-fa_IR.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-fa_IR.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-hu_HU.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-hu_HU.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-id_ID.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-id_ID.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_CN.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_CN.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_TW.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_TW.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd.pot
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-monitor.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-options.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-premium.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-progress.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/readme.txt
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/screenshot-1.png
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/screenshot-2.png
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/uninstall.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/wp-backup-to-dropbox.php</message>
+    <parent-ref>dfeecccacd287770e652743aeb6603cc0e763f2e</parent-ref>
+    <tree-ref>a0b8833c96d57b7d4dc08403f193e9ccdab0fbd9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>b32c759dd8b4e2e06ea91255393b4524551e3344</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:03:36+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:03:36+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>updated wordpress to 3.4.2 added gitignore update wp dl monitor and dp backto to dropbox</message>
+    <parent-ref>51d111ea5e90de6a2ff2f264c33234e7ebedb335</parent-ref>
+    <tree-ref>a0b8833c96d57b7d4dc08403f193e9ccdab0fbd9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>51d111ea5e90de6a2ff2f264c33234e7ebedb335</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T23:09:26+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T23:09:26+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>6684bf67247d6a1c9957de681cf626967b602cb0</parent-ref>
+    <tree-ref>6f221c20f29eaaa313821f14896b19eeac69f496</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>dfeecccacd287770e652743aeb6603cc0e763f2e</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T23:09:15+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T23:09:15+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Twitter Bootsrap licenses</message>
+    <parent-ref>e65ceb5cf3d4e6d15fbd5f34f3c8e72faf24b306</parent-ref>
+    <tree-ref>917f7618b0dd3863ec2fcacea4c9526e83802be1</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>e65ceb5cf3d4e6d15fbd5f34f3c8e72faf24b306</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:40:35+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:40:35+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>bootstrap merge</message>
+    <parent-ref>8f9dad03588752069849284f987d54a6383bf5ce</parent-ref>
+    <tree-ref>a772a6c082672cbf428f12d221a537b0f9aa66f6</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>8f9dad03588752069849284f987d54a6383bf5ce</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:36:26+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:36:26+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>04f41fc4cd841234110756aa187b082a79cad16f</parent-ref>
+    <tree-ref>14923b18d5f15a4a9d0f2ddcb7971f7e8f8fcbf9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>6684bf67247d6a1c9957de681cf626967b602cb0</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:36:07+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:36:07+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>stick a div wrap on it</message>
+    <parent-ref>9829748b87c3f7eabd22fa1051aa192828211f70</parent-ref>
+    <tree-ref>23cb33ce979b90f3be5b18d26ac895750637119f</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>04f41fc4cd841234110756aa187b082a79cad16f</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:31:48+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:31:48+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>b6fed521320cfbc113af701485184efab7619088</parent-ref>
+    <tree-ref>bd12d1d77ece9ee25fe7bf9cf9a332f2cd31aa2a</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>9829748b87c3f7eabd22fa1051aa192828211f70</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:31:42+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:31:42+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Base alignment</message>
+    <parent-ref>fdac38a699dcfe4e7b22beb7d852617e19d912c3</parent-ref>
+    <tree-ref>8bf7a97a7ec0749e864cbec4c035626b6a6aba71</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>fdac38a699dcfe4e7b22beb7d852617e19d912c3</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:20:29+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:20:29+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>htaccess merge</message>
+    <parent-ref>68a235bf918f0a35eb323be3883be1298d738948</parent-ref>
+    <tree-ref>7a779bbc2af2475faec2ddf5d05719dd6a5c7b8f</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>b6fed521320cfbc113af701485184efab7619088</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:20:02+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:20:02+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>.htaccess</message>
+    <parent-ref>86afa6392acb9c86e59e1ebe195904160b54c378</parent-ref>
+    <tree-ref>62dcd49e8e2e794a9cbf64f10cb0f54372db9c39</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>86afa6392acb9c86e59e1ebe195904160b54c378</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:18:33+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:18:33+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>resources</message>
+    <parent-ref>559c2daddb02e67e2af2e0de002267e620a10370</parent-ref>
+    <tree-ref>e9113866a518ccee432a315320547c1e3d086bef</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>559c2daddb02e67e2af2e0de002267e620a10370</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:15:20+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:15:20+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Missing Config</message>
+    <parent-ref>21409c7f06dec2a9b5ee0adfc72438935d3adcfa</parent-ref>
+    <tree-ref>efbc16f367ddc6e12cce63a08fd91920d43461e4</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>68a235bf918f0a35eb323be3883be1298d738948</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:15:18+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:15:18+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Missing config</message>
+    <parent-ref>7b2e9abd155d0dd0cca77a374e51973145c9e3f3</parent-ref>
+    <tree-ref>4eee2c3acb2776ee858ac3ab7cc623e02318fb4d</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>7b2e9abd155d0dd0cca77a374e51973145c9e3f3</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:09:17+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:09:17+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Location Data Current Build</message>
+    <parent-ref>2c8e642ebd93abd5c0256de19774fce8a8a69f37</parent-ref>
+    <tree-ref>a45a13db45fe7827c1f4f6d207636e14d8e3522d</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>21409c7f06dec2a9b5ee0adfc72438935d3adcfa</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:08:04+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:08:04+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merging additional plguins</message>
+    <parent-ref>964763cdd85294ea0b42b33a5dea0e1c13ff45e0</parent-ref>
+    <tree-ref>cf8ed6ffa2ce4d4adee16bc782d386ac08abf2ca</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>2c8e642ebd93abd5c0256de19774fce8a8a69f37</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:05:00+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:05:00+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Additional Plugins</message>
+    <parent-ref>9dc7ff90cf890c0ddd5f5374345a63c9150a1167</parent-ref>
+    <tree-ref>dba71905003af0b74e0866cccc8a8849c137d18a</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>964763cdd85294ea0b42b33a5dea0e1c13ff45e0</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T21:53:00+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T21:53:00+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>theme css merge</message>
+    <parent-ref>76c7e439370f2decd7d21bd93c7c52b164d9fa2b</parent-ref>
+    <tree-ref>03cd49a116b6f688e0f653ce9868954780ac1177</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+</commits>
+<?xml version="1.0" encoding="UTF-8"?>
+<commits type="array">
+  <commit>
+    <ref>6e292733e811f64f0450bc06764e375f7757a9d2</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:21:50+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:21:50+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Merge branch 'dev'</message>
+    <parent-ref>1e4a9958713f42ab6e806f5c279fc15e4a0e5c74</parent-ref>
+    <tree-ref>38fcde59c0dbe1bbbd3c9aa1cdfd164bf4f79efd</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>52b14186da5b7b1fb47cdf44679d5894e0c9b867</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:19:58+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:19:58+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Update WordPress properly</message>
+    <parent-ref>b32c759dd8b4e2e06ea91255393b4524551e3344</parent-ref>
+    <tree-ref>38fcde59c0dbe1bbbd3c9aa1cdfd164bf4f79efd</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>1e4a9958713f42ab6e806f5c279fc15e4a0e5c74</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:13:37+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:13:37+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Merge branch 'dev'
+
+Conflicts:
+public_html/cms/wp-content/plugins/download-monitor/admin/categories.php
+public_html/cms/wp-content/plugins/download-monitor/classes/download_taxonomies.class.php
+public_html/cms/wp-content/plugins/download-monitor/classes/downloadable_file.class.php
+public_html/cms/wp-content/plugins/download-monitor/functions.inc.php
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-code.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-excel.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-film.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-flash-movie.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-illustrator.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-image.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-music.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-pdf.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-photoshop.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-powerpoint.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-text-image.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-text.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-word-text.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-zipper.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/readme.txt
+public_html/cms/wp-content/plugins/download-monitor/init.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/connectors/jqueryFileTree.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/connectors/jqueryFileTreeDir.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/application.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/code.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/css.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/db.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/directory.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/doc.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/file.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/film.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/flash.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/folder_open.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/html.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/java.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/linux.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/music.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/pdf.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/php.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/picture.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/ppt.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/psd.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/ruby.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/script.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/spinner.gif
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/txt.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/xls.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/zip.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/jqueryFileTree.css
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/jqueryFileTree.js
+public_html/cms/wp-content/plugins/download-monitor/languages/german alt/wp-download_monitor-de_DE.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/german alt/wp-download_monitor-de_DE.po
+public_html/cms/wp-content/plugins/download-monitor/languages/polish alt/wp-download_monitor-pl_PL.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/polish alt/wp-download_monitor-pl_PL.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-cs_CZ.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-cs_CZ.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-de_DE.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-de_DE.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-fr_FR.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-fr_FR.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-it_IT.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-it_IT.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-ja.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-ja.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-pl_PL.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-pl_PL.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-zh_CN.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-zh_CN.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor.po
+public_html/cms/wp-content/plugins/download-monitor/legacy_shortcodes.php
+public_html/cms/wp-content/plugins/download-monitor/page-addon/download-monitor-page-addon.php
+public_html/cms/wp-content/plugins/download-monitor/readme.txt
+public_html/cms/wp-content/plugins/download-monitor/shortcodes.php
+public_html/cms/wp-content/plugins/download-monitor/wp-download_monitor.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-dropbox-facade.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-file-list.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-config.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database-core.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database-plugins.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-extension-manager.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-output.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Dropbox_API/src/Dropbox/OAuth/PEAR.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-ar.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-ar.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-fa_IR.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-fa_IR.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-hu_HU.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-hu_HU.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-id_ID.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-id_ID.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_CN.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_CN.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_TW.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_TW.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd.pot
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-monitor.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-options.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-premium.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-progress.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/readme.txt
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/screenshot-1.png
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/screenshot-2.png
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/uninstall.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/wp-backup-to-dropbox.php</message>
+    <parent-ref>dfeecccacd287770e652743aeb6603cc0e763f2e</parent-ref>
+    <tree-ref>a0b8833c96d57b7d4dc08403f193e9ccdab0fbd9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>b32c759dd8b4e2e06ea91255393b4524551e3344</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:03:36+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:03:36+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>updated wordpress to 3.4.2 added gitignore update wp dl monitor and dp backto to dropbox</message>
+    <parent-ref>51d111ea5e90de6a2ff2f264c33234e7ebedb335</parent-ref>
+    <tree-ref>a0b8833c96d57b7d4dc08403f193e9ccdab0fbd9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>51d111ea5e90de6a2ff2f264c33234e7ebedb335</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T23:09:26+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T23:09:26+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>6684bf67247d6a1c9957de681cf626967b602cb0</parent-ref>
+    <tree-ref>6f221c20f29eaaa313821f14896b19eeac69f496</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>dfeecccacd287770e652743aeb6603cc0e763f2e</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T23:09:15+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T23:09:15+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Twitter Bootsrap licenses</message>
+    <parent-ref>e65ceb5cf3d4e6d15fbd5f34f3c8e72faf24b306</parent-ref>
+    <tree-ref>917f7618b0dd3863ec2fcacea4c9526e83802be1</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>e65ceb5cf3d4e6d15fbd5f34f3c8e72faf24b306</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:40:35+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:40:35+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>bootstrap merge</message>
+    <parent-ref>8f9dad03588752069849284f987d54a6383bf5ce</parent-ref>
+    <tree-ref>a772a6c082672cbf428f12d221a537b0f9aa66f6</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>8f9dad03588752069849284f987d54a6383bf5ce</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:36:26+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:36:26+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>04f41fc4cd841234110756aa187b082a79cad16f</parent-ref>
+    <tree-ref>14923b18d5f15a4a9d0f2ddcb7971f7e8f8fcbf9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>6684bf67247d6a1c9957de681cf626967b602cb0</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:36:07+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:36:07+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>stick a div wrap on it</message>
+    <parent-ref>9829748b87c3f7eabd22fa1051aa192828211f70</parent-ref>
+    <tree-ref>23cb33ce979b90f3be5b18d26ac895750637119f</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>04f41fc4cd841234110756aa187b082a79cad16f</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:31:48+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:31:48+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>b6fed521320cfbc113af701485184efab7619088</parent-ref>
+    <tree-ref>bd12d1d77ece9ee25fe7bf9cf9a332f2cd31aa2a</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>9829748b87c3f7eabd22fa1051aa192828211f70</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:31:42+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:31:42+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Base alignment</message>
+    <parent-ref>fdac38a699dcfe4e7b22beb7d852617e19d912c3</parent-ref>
+    <tree-ref>8bf7a97a7ec0749e864cbec4c035626b6a6aba71</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>fdac38a699dcfe4e7b22beb7d852617e19d912c3</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:20:29+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:20:29+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>htaccess merge</message>
+    <parent-ref>68a235bf918f0a35eb323be3883be1298d738948</parent-ref>
+    <tree-ref>7a779bbc2af2475faec2ddf5d05719dd6a5c7b8f</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>b6fed521320cfbc113af701485184efab7619088</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:20:02+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:20:02+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>.htaccess</message>
+    <parent-ref>86afa6392acb9c86e59e1ebe195904160b54c378</parent-ref>
+    <tree-ref>62dcd49e8e2e794a9cbf64f10cb0f54372db9c39</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>86afa6392acb9c86e59e1ebe195904160b54c378</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:18:33+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:18:33+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>resources</message>
+    <parent-ref>559c2daddb02e67e2af2e0de002267e620a10370</parent-ref>
+    <tree-ref>e9113866a518ccee432a315320547c1e3d086bef</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>559c2daddb02e67e2af2e0de002267e620a10370</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:15:20+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:15:20+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Missing Config</message>
+    <parent-ref>21409c7f06dec2a9b5ee0adfc72438935d3adcfa</parent-ref>
+    <tree-ref>efbc16f367ddc6e12cce63a08fd91920d43461e4</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>68a235bf918f0a35eb323be3883be1298d738948</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:15:18+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:15:18+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Missing config</message>
+    <parent-ref>7b2e9abd155d0dd0cca77a374e51973145c9e3f3</parent-ref>
+    <tree-ref>4eee2c3acb2776ee858ac3ab7cc623e02318fb4d</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>7b2e9abd155d0dd0cca77a374e51973145c9e3f3</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:09:17+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:09:17+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Location Data Current Build</message>
+    <parent-ref>2c8e642ebd93abd5c0256de19774fce8a8a69f37</parent-ref>
+    <tree-ref>a45a13db45fe7827c1f4f6d207636e14d8e3522d</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>21409c7f06dec2a9b5ee0adfc72438935d3adcfa</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:08:04+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:08:04+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merging additional plguins</message>
+    <parent-ref>964763cdd85294ea0b42b33a5dea0e1c13ff45e0</parent-ref>
+    <tree-ref>cf8ed6ffa2ce4d4adee16bc782d386ac08abf2ca</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>2c8e642ebd93abd5c0256de19774fce8a8a69f37</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:05:00+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:05:00+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Additional Plugins</message>
+    <parent-ref>9dc7ff90cf890c0ddd5f5374345a63c9150a1167</parent-ref>
+    <tree-ref>dba71905003af0b74e0866cccc8a8849c137d18a</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>964763cdd85294ea0b42b33a5dea0e1c13ff45e0</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T21:53:00+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T21:53:00+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>theme css merge</message>
+    <parent-ref>76c7e439370f2decd7d21bd93c7c52b164d9fa2b</parent-ref>
+    <tree-ref>03cd49a116b6f688e0f653ce9868954780ac1177</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+</commits>
+<?xml version="1.0" encoding="UTF-8"?>
+<commits type="array">
+  <commit>
+    <ref>6e292733e811f64f0450bc06764e375f7757a9d2</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:21:50+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:21:50+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Merge branch 'dev'</message>
+    <parent-ref>1e4a9958713f42ab6e806f5c279fc15e4a0e5c74</parent-ref>
+    <tree-ref>38fcde59c0dbe1bbbd3c9aa1cdfd164bf4f79efd</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>52b14186da5b7b1fb47cdf44679d5894e0c9b867</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:19:58+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:19:58+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Update WordPress properly</message>
+    <parent-ref>b32c759dd8b4e2e06ea91255393b4524551e3344</parent-ref>
+    <tree-ref>38fcde59c0dbe1bbbd3c9aa1cdfd164bf4f79efd</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>1e4a9958713f42ab6e806f5c279fc15e4a0e5c74</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:13:37+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:13:37+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Merge branch 'dev'
+
+Conflicts:
+public_html/cms/wp-content/plugins/download-monitor/admin/categories.php
+public_html/cms/wp-content/plugins/download-monitor/classes/download_taxonomies.class.php
+public_html/cms/wp-content/plugins/download-monitor/classes/downloadable_file.class.php
+public_html/cms/wp-content/plugins/download-monitor/functions.inc.php
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-code.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-excel.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-film.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-flash-movie.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-illustrator.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-image.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-music.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-pdf.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-photoshop.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-powerpoint.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-text-image.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-text.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-word-text.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document-zipper.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/document.png
+public_html/cms/wp-content/plugins/download-monitor/img/filetype_icons/readme.txt
+public_html/cms/wp-content/plugins/download-monitor/init.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/connectors/jqueryFileTree.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/connectors/jqueryFileTreeDir.php
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/application.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/code.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/css.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/db.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/directory.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/doc.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/file.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/film.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/flash.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/folder_open.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/html.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/java.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/linux.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/music.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/pdf.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/php.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/picture.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/ppt.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/psd.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/ruby.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/script.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/spinner.gif
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/txt.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/xls.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/images/zip.png
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/jqueryFileTree.css
+public_html/cms/wp-content/plugins/download-monitor/js/jqueryFileTree/jqueryFileTree.js
+public_html/cms/wp-content/plugins/download-monitor/languages/german alt/wp-download_monitor-de_DE.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/german alt/wp-download_monitor-de_DE.po
+public_html/cms/wp-content/plugins/download-monitor/languages/polish alt/wp-download_monitor-pl_PL.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/polish alt/wp-download_monitor-pl_PL.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-cs_CZ.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-cs_CZ.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-de_DE.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-de_DE.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-fr_FR.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-fr_FR.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-it_IT.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-it_IT.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-ja.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-ja.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-pl_PL.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-pl_PL.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-zh_CN.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor-zh_CN.po
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor.mo
+public_html/cms/wp-content/plugins/download-monitor/languages/wp-download_monitor.po
+public_html/cms/wp-content/plugins/download-monitor/legacy_shortcodes.php
+public_html/cms/wp-content/plugins/download-monitor/page-addon/download-monitor-page-addon.php
+public_html/cms/wp-content/plugins/download-monitor/readme.txt
+public_html/cms/wp-content/plugins/download-monitor/shortcodes.php
+public_html/cms/wp-content/plugins/download-monitor/wp-download_monitor.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-dropbox-facade.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-file-list.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-config.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database-core.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database-plugins.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-database.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-extension-manager.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup-output.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Classes/class-wp-backup.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Dropbox_API/src/Dropbox/OAuth/PEAR.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-ar.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-ar.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-fa_IR.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-fa_IR.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-hu_HU.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-hu_HU.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-id_ID.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-id_ID.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_CN.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_CN.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_TW.mo
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd-zh_TW.po
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Languages/wpbtd.pot
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-monitor.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-options.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-premium.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/Views/wp-backup-to-dropbox-progress.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/readme.txt
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/screenshot-1.png
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/screenshot-2.png
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/uninstall.php
+public_html/cms/wp-content/plugins/wordpress-backup-to-dropbox/wp-backup-to-dropbox.php</message>
+    <parent-ref>dfeecccacd287770e652743aeb6603cc0e763f2e</parent-ref>
+    <tree-ref>a0b8833c96d57b7d4dc08403f193e9ccdab0fbd9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>b32c759dd8b4e2e06ea91255393b4524551e3344</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-10-27T00:03:36+01:00</authored-at>
+    <committed-at type="datetime">2012-10-27T00:03:36+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>updated wordpress to 3.4.2 added gitignore update wp dl monitor and dp backto to dropbox</message>
+    <parent-ref>51d111ea5e90de6a2ff2f264c33234e7ebedb335</parent-ref>
+    <tree-ref>a0b8833c96d57b7d4dc08403f193e9ccdab0fbd9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>51d111ea5e90de6a2ff2f264c33234e7ebedb335</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T23:09:26+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T23:09:26+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>6684bf67247d6a1c9957de681cf626967b602cb0</parent-ref>
+    <tree-ref>6f221c20f29eaaa313821f14896b19eeac69f496</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>dfeecccacd287770e652743aeb6603cc0e763f2e</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T23:09:15+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T23:09:15+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Twitter Bootsrap licenses</message>
+    <parent-ref>e65ceb5cf3d4e6d15fbd5f34f3c8e72faf24b306</parent-ref>
+    <tree-ref>917f7618b0dd3863ec2fcacea4c9526e83802be1</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>e65ceb5cf3d4e6d15fbd5f34f3c8e72faf24b306</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:40:35+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:40:35+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>bootstrap merge</message>
+    <parent-ref>8f9dad03588752069849284f987d54a6383bf5ce</parent-ref>
+    <tree-ref>a772a6c082672cbf428f12d221a537b0f9aa66f6</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>8f9dad03588752069849284f987d54a6383bf5ce</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:36:26+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:36:26+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>04f41fc4cd841234110756aa187b082a79cad16f</parent-ref>
+    <tree-ref>14923b18d5f15a4a9d0f2ddcb7971f7e8f8fcbf9</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>6684bf67247d6a1c9957de681cf626967b602cb0</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:36:07+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:36:07+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>stick a div wrap on it</message>
+    <parent-ref>9829748b87c3f7eabd22fa1051aa192828211f70</parent-ref>
+    <tree-ref>23cb33ce979b90f3be5b18d26ac895750637119f</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>04f41fc4cd841234110756aa187b082a79cad16f</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:31:48+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:31:48+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merge</message>
+    <parent-ref>b6fed521320cfbc113af701485184efab7619088</parent-ref>
+    <tree-ref>bd12d1d77ece9ee25fe7bf9cf9a332f2cd31aa2a</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>9829748b87c3f7eabd22fa1051aa192828211f70</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:31:42+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:31:42+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Base alignment</message>
+    <parent-ref>fdac38a699dcfe4e7b22beb7d852617e19d912c3</parent-ref>
+    <tree-ref>8bf7a97a7ec0749e864cbec4c035626b6a6aba71</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>fdac38a699dcfe4e7b22beb7d852617e19d912c3</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:20:29+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:20:29+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>htaccess merge</message>
+    <parent-ref>68a235bf918f0a35eb323be3883be1298d738948</parent-ref>
+    <tree-ref>7a779bbc2af2475faec2ddf5d05719dd6a5c7b8f</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>b6fed521320cfbc113af701485184efab7619088</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:20:02+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:20:02+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>.htaccess</message>
+    <parent-ref>86afa6392acb9c86e59e1ebe195904160b54c378</parent-ref>
+    <tree-ref>62dcd49e8e2e794a9cbf64f10cb0f54372db9c39</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>86afa6392acb9c86e59e1ebe195904160b54c378</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:18:33+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:18:33+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>resources</message>
+    <parent-ref>559c2daddb02e67e2af2e0de002267e620a10370</parent-ref>
+    <tree-ref>e9113866a518ccee432a315320547c1e3d086bef</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>559c2daddb02e67e2af2e0de002267e620a10370</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:15:20+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:15:20+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Missing Config</message>
+    <parent-ref>21409c7f06dec2a9b5ee0adfc72438935d3adcfa</parent-ref>
+    <tree-ref>efbc16f367ddc6e12cce63a08fd91920d43461e4</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>68a235bf918f0a35eb323be3883be1298d738948</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:15:18+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:15:18+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Missing config</message>
+    <parent-ref>7b2e9abd155d0dd0cca77a374e51973145c9e3f3</parent-ref>
+    <tree-ref>4eee2c3acb2776ee858ac3ab7cc623e02318fb4d</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>7b2e9abd155d0dd0cca77a374e51973145c9e3f3</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:09:17+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:09:17+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Location Data Current Build</message>
+    <parent-ref>2c8e642ebd93abd5c0256de19774fce8a8a69f37</parent-ref>
+    <tree-ref>a45a13db45fe7827c1f4f6d207636e14d8e3522d</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>21409c7f06dec2a9b5ee0adfc72438935d3adcfa</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:08:04+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:08:04+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>merging additional plguins</message>
+    <parent-ref>964763cdd85294ea0b42b33a5dea0e1c13ff45e0</parent-ref>
+    <tree-ref>cf8ed6ffa2ce4d4adee16bc782d386ac08abf2ca</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>2c8e642ebd93abd5c0256de19774fce8a8a69f37</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T22:05:00+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T22:05:00+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>Additional Plugins</message>
+    <parent-ref>9dc7ff90cf890c0ddd5f5374345a63c9150a1167</parent-ref>
+    <tree-ref>dba71905003af0b74e0866cccc8a8849c137d18a</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+  <commit>
+    <ref>964763cdd85294ea0b42b33a5dea0e1c13ff45e0</ref>
+    <author-email>Barry Carlyon</author-email>
+    <author-name>barry@barrycarlyon.co.uk</author-name>
+    <authored-at type="datetime">2012-08-11T21:53:00+01:00</authored-at>
+    <committed-at type="datetime">2012-08-11T21:53:00+01:00</committed-at>
+    <committer-email>barry@barrycarlyon.co.uk</committer-email>
+    <committer-name>Barry Carlyon</committer-name>
+    <message>theme css merge</message>
+    <parent-ref>76c7e439370f2decd7d21bd93c7c52b164d9fa2b</parent-ref>
+    <tree-ref>03cd49a116b6f688e0f653ce9868954780ac1177</tree-ref>
+    <author-user>barrycarlyon</author-user>
+    <committer-user>barrycarlyon</committer-user>
+  </commit>
+</commits>
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <project-id type="integer">36241</project-id>
+  <group-id nil="true"></group-id>
+  <icon type="integer">1</icon>
+  <name>ttest</name>
+  <overview nil="true"></overview>
+  <start-page>overview</start-page>
+  <status>active</status>
+  <permalink>ttest</permalink>
+</project>
+<?xml version="1.0" encoding="UTF-8"?>
+<201>
+  <default-branch nil="true"></default-branch>
+  <disk-usage type="integer">0</disk-usage>
+  <last-commit-ref nil="true"></last-commit-ref>
+  <clone-url>git@codebasehq.com:barrycarlyon/test/test.git</clone-url>
+  <name>test</name>
+  <permalink>test</permalink>
+  <scm>git</scm>
+  <source nil="true"></source>
+  <sync nil="true"></sync>
+  <last-sync-at nil="true"></last-sync-at>
+</201>
+<?xml version="1.0" encoding="UTF-8"?>
+<201>
+  <default-branch nil="true"></default-branch>
+  <disk-usage type="integer">0</disk-usage>
+  <last-commit-ref nil="true"></last-commit-ref>
+  <clone-url>git@codebasehq.com:barrycarlyon/test/testb.git</clone-url>
+  <name>testb</name>
+  <permalink>testb</permalink>
+  <scm>git</scm>
+  <source nil="true"></source>
+  <sync nil="true"></sync>
+  <last-sync-at nil="true"></last-sync-at>
+</201>
+<?xml version="1.0" encoding="UTF-8"?>
+<repository>
+  <default-branch nil="true"></default-branch>
+  <disk-usage type="integer">0</disk-usage>
+  <last-commit-ref nil="true"></last-commit-ref>
+  <clone-url>git@codebasehq.com:barrycarlyon/test/testb-2.git</clone-url>
+  <name>testb</name>
+  <permalink>testb-2</permalink>
+  <scm>git</scm>
+  <source nil="true"></source>
+  <sync nil="true"></sync>
+  <last-sync-at nil="true"></last-sync-at>
+</repository>
