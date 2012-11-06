@@ -93,8 +93,8 @@ class PointHqClient extends AbstractClient
     /**
     * Update a zone
     *
-    * @param int   $zone zone id    
-    * @param array $data data to update
+    * @param int   $zone zone id
+    * @param array $data data to update, you cannot update the name/domain
     *
     * @return the new zone on success
     */
@@ -108,7 +108,7 @@ class PointHqClient extends AbstractClient
     /**
     * Delete a zone
     *
-    * @param int   $zone zone id    
+    * @param int $zone zone id    
     *
     * @return true on success
     */
@@ -120,4 +120,76 @@ class PointHqClient extends AbstractClient
     /**
     Zone Records
     */
+
+    /**
+    * Get records for a zone
+    * @param int $zone zone id
+    *
+    * @return an array of records
+    */
+    function getZoneRecords($zone) {
+        return $this->get('/zones/' . $zone . '/records');
+    }
+
+    /**
+    * Get a record for a zone
+    *
+    * @param int $zone zone id
+    * @param int $record record id
+    *
+    * @return the record
+    */
+    function getZoneRecord($zone, $record) {
+        return $this->get('/zones/' . $zone . '/records/' . $record);
+    }
+
+    /**
+    * Create a record for a zone
+    *
+    * @param int    $zone                zone id to add record to
+    * @param string $data                data for the record
+    * @param string $name                name for the record
+    * @param string $type                record type
+    * @param string $ttl                 record ttl
+    * @param string $redirect_to         record redirect to if a redirect
+    * @param string $redirection_counter record redirect counter
+    * 
+    * @return the created record
+    */
+    public function createZoneRecord($zone, $data, $name, $type, $ttl = '', $redirect_to = '', $redirection_counter = '')
+    {
+        $payload = array('zone-record' => array(
+            'data'          => $data,
+            'name'          => $name,
+            'record-type'   => $type,
+            'zone-id'       => $zone
+        ));
+        if ($ttl) {
+            $payload['zone-record']['ttl'] = $ttl;
+        }
+        if ($redirect_to) {
+            $payload['zone-record']['redirect-to'] = $redirect_to;
+        }
+        if ($redirection_counter) {
+            $payload['zone-record']['redirection-counter'] = $redirection_counter;
+        }
+        $payload = json_encode($payload);
+        return $this->post('/zones/' . $zone . '/records', $payload);
+    }
+
+    /**
+    * Update a zone record
+    *
+    * @param int   $zone   zone id
+    * @param int   $record record id
+    * @param array $data   data to update
+    *
+    * @return the new zone on success
+    */
+    public function updateZoneRecord($zone, $record, $data)
+    {
+        $payload = array('zone-record' => $data);
+        $payload = json_encode($payload);
+        return $this->put('zones/' . $zone . '/record/' . $record, $payload);
+    }
 }
