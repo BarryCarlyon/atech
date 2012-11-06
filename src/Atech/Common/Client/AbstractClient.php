@@ -26,7 +26,6 @@ class AbstractClient
     private $_url;
     private $_apiuser;
     private $_apikey;
-    private $_hostname;
     public $http_code;
 
     /**
@@ -43,7 +42,7 @@ class AbstractClient
     {
         $this->_data_type = $data_type;
         $this->_url = $url;
-        list($this->_hostname, $this->_apiuser) = explode('/', $apiuser);
+        $this->_apiuser = $apiuser;
         $this->_apikey = $apikey;
     }
 
@@ -70,7 +69,7 @@ class AbstractClient
             'Content-Type: ' . $this->_data_type,
             'Accept: ' . $this->_data_type,
             'Authorization: Basic ' . base64_encode(
-                $this->_hostname .'/' . $this->_apiuser . ':'. $this->_apikey
+                $this->_apiuser . ':'. $this->_apikey
             )
         );
 
