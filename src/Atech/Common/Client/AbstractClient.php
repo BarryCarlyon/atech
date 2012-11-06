@@ -28,6 +28,9 @@ class AbstractClient
     private $_apikey;
     public $http_code;
 
+    const ATECH_JSON = 'application/json';
+    const ATECH_XML = 'application/xml';
+
     /**
     * Spawn
     *
@@ -98,13 +101,14 @@ class AbstractClient
         if ($code == 200 || $code == 201) {
             // convert
             try {
-                $response = json_decode(
-                    json_encode(
+                if ($this->_data_type == AbstractClient::ATECH_XML) {
+                    $response = json_encode(
                         simplexml_load_string(
                             $response, 'SimpleXMLElement', LIBXML_NOCDATA
                         )
-                    )
-                );
+                    );
+                }
+                $response = json_decode($response);
             } catch (\Exception $error2) {
                 throw new \Exception('XML was not returned, an error has occured');
             }
@@ -118,14 +122,15 @@ class AbstractClient
             throw new \Exception('Conflict, Unmet Dependancies');
         } elseif ($code == 422) {
             try {
-                $response = json_decode(
-                    json_encode(
+                if ($this->_data_type == AbstractClient::ATECH_XML) {
+                    $response = json_encode(
                         simplexml_load_string(
                             $response, 'SimpleXMLElement', LIBXML_NOCDATA
                         )
-                    )
-                );
-                $error = $response->error;
+                    );
+                }
+                $response = json_decode($response);
+                $error = isset($response->error) ? $response->error : 'Unknown Error';
             } catch (\Exception $error2) {
                 $error = 'Unprocessable Entity';
             }
