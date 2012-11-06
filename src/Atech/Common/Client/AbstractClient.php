@@ -108,7 +108,10 @@ class AbstractClient
                         )
                     );
                 }
-                $response = json_decode($response);
+                $decode = json_decode($response);
+                if (json_last_error() == JSON_ERROR_NONE) {
+                    $response = $decode;
+                }
             } catch (\Exception $error2) {
                 throw new \Exception('XML was not returned, an error has occured');
             }
@@ -129,7 +132,10 @@ class AbstractClient
                         )
                     );
                 }
-                $response = json_decode($response);
+                $decode = json_decode($response);
+                if (json_last_error() == JSON_ERROR_NONE) {
+                    $response = $decode;
+                }
                 $error = isset($response->error) ? $response->error : 'Unknown Error';
             } catch (\Exception $error2) {
                 $error = 'Unprocessable Entity';
@@ -178,7 +184,7 @@ class AbstractClient
     */
     protected function post($url, $body, $is_set = false)
     {
-        return $this->request($url, $body, 1);
+        return $this->_request($url, $body, 1);
     }
     /**
     * Delete Function
@@ -189,7 +195,7 @@ class AbstractClient
     */
     protected function delete($url)
     {
-        $this->request($url, null, 2);
+        $this->_request($url, null, 2);
         if ($this->http_code == 200) {
             return true;
         }
