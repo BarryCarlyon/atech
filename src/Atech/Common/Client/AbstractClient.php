@@ -22,6 +22,7 @@ namespace Atech\Common\Client;
  */
 class AbstractClient
 {
+    private $_data_type;
     private $_url;
     private $_apiuser;
     private $_apikey;
@@ -31,14 +32,16 @@ class AbstractClient
     /**
     * Spawn
     *
-    * @param string $url     Base API Url
-    * @param string $apiuser API Username
-    * @param string $apikey  API Key
+    * @param string $data_type what Data type to accept/send
+    * @param string $url       Base API Url
+    * @param string $apiuser   API Username
+    * @param string $apikey    API Key
     *
     * @return nothing
     */
-    protected function build($url, $apiuser, $apikey)
+    protected function build($data_type, $url, $apiuser, $apikey)
     {
+        $this->_data_type = $data_type;
         $this->_url = $url;
         list($this->_hostname, $this->_apiuser) = explode('/', $apiuser);
         $this->_apikey = $apikey;
@@ -64,8 +67,8 @@ class AbstractClient
             curl_setopt($ch, CURLOPT_POSTFIELDS, $body);
         }
         $headers = array(
-            'Content-Type: application/xml',
-            'Accept: application/xml',
+            'Content-Type: ' . $this->_data_type,
+            'Accept: ' . $this->_data_type,
             'Authorization: Basic ' . base64_encode(
                 $this->_hostname .'/' . $this->_apiuser . ':'. $this->_apikey
             )

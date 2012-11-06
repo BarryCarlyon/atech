@@ -25,6 +25,7 @@ use Atech\Common\Client\AbstractClient;
 class CodebaseClient extends AbstractClient
 {
     static $url = 'https://api3.codebasehq.com/';
+    static $dataType = 'application/xml';
 
     /**
     * Spawn
@@ -36,7 +37,7 @@ class CodebaseClient extends AbstractClient
     */
     public function __construct($apiuser, $apikey)
     {
-        return parent::build(CodebaseClient::$url, $apiuser, $apikey);
+        return parent::build(CodebaseClient::$dataType, CodebaseClient::$url, $apiuser, $apikey);
     }
 
     /**
