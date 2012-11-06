@@ -62,7 +62,9 @@ class AbstractClient
     {
         $ch = curl_init($this->_url . $url);
 
-        if ($method == 2) {
+        if ($method == 3) {
+            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'PUT');
+        } elseif ($method == 2) {
             curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'DELETE');
         } elseif ($method == 1) {
             curl_setopt($ch, CURLOPT_POST, true);
@@ -115,10 +117,10 @@ class AbstractClient
             } catch (\Exception $error2) {
                 throw new \Exception('XML was not returned, an error has occured');
             }
-        } elseif ($code == 404) {
-            throw new \Exception('Resource Not Found');
         } elseif ($code == 403) {
             throw new \Exception('Access Denied');
+        } elseif ($code == 404) {
+            throw new \Exception('Resource Not Found');
         } elseif ($code == 406) {
             throw new \Exception('Wrong HTTP Verb');
         } elseif ($code == 409) {
@@ -200,6 +202,19 @@ class AbstractClient
             return true;
         }
     }
+    /**
+    * Put function
+    *
+    * @param string $url    Full URL to call
+    * @param string $body   Body to pas
+    * @param string $is_set response key to catch for group data
+    *
+    * @return the response
+    */
+    protected function put($url, $body, $is_set = false)
+    {
+        return $this->_request($url, $body, 3);
+    }    
 
     /**
     * Read/Parse Header Function
