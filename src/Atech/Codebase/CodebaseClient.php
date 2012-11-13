@@ -51,7 +51,7 @@ class CodebaseClient extends AbstractClient
     */
     public function activity()
     {
-        return $this->get('activity', 'activity');
+        return $this->get('activity', 'event');
     }
 
     /**
@@ -63,7 +63,7 @@ class CodebaseClient extends AbstractClient
     */
     public function projectActivity($permalink)
     {
-        return $this->get($permalink . '/activity', 'activity');
+        return $this->get($permalink . '/activity', 'event');
     }
 
     /**
@@ -213,6 +213,10 @@ class CodebaseClient extends AbstractClient
     }
 
     /**
+    Commits
+    */
+
+    /**
     * Repository Commits
     *
     * @param string $permalink project shortname/permalink
@@ -232,5 +236,73 @@ class CodebaseClient extends AbstractClient
             $file = '/' . $file;
         }
         return $this->get($permalink . '/' . $repo . '/commits/'. $ref . $file, 'commit');
+    }
+
+    /**
+    Deployments
+    */
+
+    /**
+    * Create a deployment for a repository of a project
+    *
+    * @param string       $permalink   project shortname/permalink *required
+    * @param string       $repository  repository shortname/permalink *required
+    * @param string       $branch      branch to deploy from *required
+    * @param string       $revision    revision to deploy to *required
+    * @param string|array $servers     array of server urls to send to, or a single server url to deployto *required
+    * @param string       $environment optional name to use as a reference
+    *
+    * @return a single deployment object
+    */
+    public function createDeployment($permalink, $repository, $branch, $revision, $servers, $environment = 'production')
+    {
+        $xml = '<deployment>
+    <branch>' . $branch . '</branch>
+    <revision>' . $revision . '</revision>
+    <servers>' . (is_array($servers) ? implode(',', $servers) : $servers) . '</servers>
+    <environment>' . $environment . '</environment>
+</deployment>
+';
+        return $this->post($permalink . '/' . $repository . '/deployments', $xml, 'deployment');
+    }
+
+    /**
+    Files
+    http://support.codebasehq.com/kb/api-documentation/repositories/files
+    */
+
+    /**
+    Hooks
+    */
+
+    /**
+    * Get all hooks for a repository
+    *
+    * @param string $permalink   project shortname/permalink *required
+    * @param string $repository  repository shortname/permalink *required
+    *
+    * @return a hook object
+    */
+    public function getHooks($permalink, $repository) {
+        return $this->get($permalink . '/' . $repository . '/hooks', 'repository-hook');
+    }
+
+    /**
+    * Create a hook for a repository
+    *
+    * @param string $permalink  project shortname/permalink *required
+    * @param string $repository repository shortname/permalink *required
+    * @param string $url        url to post to *required
+    * @param string $username   username for basic auth if needed
+    * @param string $password   password for basic auth if needed
+    */
+    public function createHook($permalink, $repository, $url, $username = false, $password = false)
+    {
+        $xml = '<repository-hook>
+    <url>' . $url . '</url>
+    ' . ($username ? '<username>' . $username . '</username>' : '') . '
+    ' . ($password ? '<password>' . $password . '</password>' : '') . '
+</repository-hook>';
+        return $this->post($permalink . '/' . $repository . '/hooks', $xml, 'repository-hook');
     }
 }
