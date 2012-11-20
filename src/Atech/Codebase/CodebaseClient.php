@@ -68,6 +68,14 @@ class CodebaseClient extends AbstractClient
         return $this->activityRepair($this->get($permalink . '/activity', 'event'));
     }
 
+    /**
+    * Repairs the URL's in the activity stream
+    * as they are local instead of permalink
+    *
+    * @param array $data array of activity events
+    *
+    * @return array an array of fixed acitivity events
+    */
     private function activityRepair($data) {
         // repair
         foreach ($data->event as &$entry) {
