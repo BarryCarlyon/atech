@@ -24,21 +24,21 @@ use Atech\Common\Notification\AbstractNotification;
  */
 class DeployHqNotification extends AbstractNotification
 {
-	/**
-	* grab data
-	* validate the signature
-	*
-	* @return mixed packet on ok false not ok
-	*/
-	function __construct()
-	{
-		$this->_keyFile = __DIR__ . 'public.key';
+    /**
+    * grab data
+    * validate the signature
+    *
+    * @return mixed packet on ok false not ok
+    */
+    function __construct()
+    {
+        $this->_keyFile = __DIR__ . 'public.key';
 
-		parent::__construct();
+        parent::__construct();
 
-		if ($this->validateSignature()) {
-			return json_decode($this->payload);
-		}
-		return false;
-	}
+        if ($this->validateSignature()) {
+            return json_decode($this->payload);
+        }
+        return false;
+    }
 }

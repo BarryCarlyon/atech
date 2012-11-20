@@ -26,7 +26,7 @@ class CodebaseClient extends AbstractClient
 {
     static $url = 'https://api3.codebasehq.com/';
     static $dataType = 'application/xml';
-    private $hostname = '';
+    private $_hostname = '';
 
     /**
     * Spawn
@@ -38,8 +38,11 @@ class CodebaseClient extends AbstractClient
     */
     public function __construct($apiuser, $apikey)
     {
-        list($this->hostname, $user) = explode('/', $apiuser);
-        return parent::build(CodebaseClient::$dataType, CodebaseClient::$url, $apiuser, $apikey);
+        list($this->_hostname, $user) = explode('/', $apiuser);
+        return parent::build(
+            CodebaseClient::$dataType,
+            CodebaseClient::$url, $apiuser, $apikey
+        );
     }
 
     /**
@@ -53,7 +56,7 @@ class CodebaseClient extends AbstractClient
     */
     public function listActivity()
     {
-        return $this->activityRepair($this->get('activity', 'event'));
+        return $this->_activityRepair($this->get('activity', 'event'));
     }
 
     /**
@@ -65,7 +68,7 @@ class CodebaseClient extends AbstractClient
     */
     public function listProjectActivity($permalink)
     {
-        return $this->activityRepair($this->get($permalink . '/activity', 'event'));
+        return $this->_activityRepair($this->get($permalink . '/activity', 'event'));
     }
 
     /**
@@ -76,10 +79,15 @@ class CodebaseClient extends AbstractClient
     *
     * @return array an array of fixed acitivity events
     */
-    private function activityRepair($data) {
+    private function _activityRepair($data)
+    {
         // repair
         foreach ($data->event as &$entry) {
-            $entry = str_replace('<a href="', '<a href="https://' . $this->hostname . '.codebasehq.com', $entry);
+            $entry = str_replace(
+                '<a href="',
+                '<a href="https://' . $this->_hostname . '.codebasehq.com',
+                $entry
+            );
         }
         return $data;
     }
@@ -310,7 +318,8 @@ class CodebaseClient extends AbstractClient
     *
     * @return a hook object
     */
-    public function getProjectRepositoryHooks($permalink, $repository) {
+    public function getProjectRepositoryHooks($permalink, $repository)
+    {
         return $this->get($permalink . '/' . $repository . '/hooks', 'repository-hook');
     }
 
@@ -432,7 +441,7 @@ class CodebaseClient extends AbstractClient
     /**
     * Get notes on a ticket
     *
-    * @param string $permalink  project shortname/permalink *required
+    * @param string  $permalink project shortname/permalink *required
     * @param integer $ticket_id ticket ID
     *
     * @return mixed the updated ticket or false on error
@@ -445,7 +454,7 @@ class CodebaseClient extends AbstractClient
     /**
     * Get a specific note on a ticket
     *
-    * @param string $permalink  project shortname/permalink *required
+    * @param string  $permalink project shortname/permalink *required
     * @param integer $ticket_id ticket ID
     * @param integer $note_id   note ID
     *
@@ -503,7 +512,7 @@ class CodebaseClient extends AbstractClient
     /**
     * Get all Milestones for a project
     *
-    * @param string  $permalink   project shortname/permalink *required
+    * @param string $permalink project shortname/permalink *required
     *
     * @return a set of milestones
     */
@@ -515,8 +524,8 @@ class CodebaseClient extends AbstractClient
     /**
     * Who is watching this ticket?
     *
-    * @param string  $permalink   project shortname/permalink *required
-    * @param integer $ticket_id   ticket ID
+    * @param string  $permalink project shortname/permalink *required
+    * @param integer $ticket_id ticket ID
     *
     * @return a set of watchers (a user ID/username per item)
     */
@@ -533,7 +542,7 @@ class CodebaseClient extends AbstractClient
     /**
     * Get all time sessions for a project
     * 
-    * @param string $permalink   project shortname/permalink *required
+    * @param string $permalink project shortname/permalink *required
     *
     * @return mixed a set of time sessions or false
     */

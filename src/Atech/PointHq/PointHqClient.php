@@ -49,28 +49,30 @@ class PointHqClient extends AbstractClient
     *
     * @return an array of zones
     */
-    public function zones() {
+    public function zones()
+    {
         return $this->get('zones');//, 'zone');
     }
 
     /**
     * Get a zone
     *
-    * @param int $zone zone id
+    * @param integer $zone zone id
     *
     * @return a zone
     */
-    public function getZone($zone) {
+    public function getZone($zone)
+    {
         return $this->get('zones/' . $zone);
     }
 
     /**
     * Create a zone
     *
-    * @param string $name    The name to use, most commonly the domain name
-    * @param int    $ttl     The Time to Live to use in seconds 3600 is an hour for example
-    * @param string $group   Optional Descriptive words
-    * @param int    $user_id optional user id to assign to
+    * @param string  $name    The name to use, most commonly the domain name
+    * @param integer $ttl     The Time to Live to use in seconds 3600 is an hour for example
+    * @param string  $group   Optional Descriptive words
+    * @param integer $user_id optional user id to assign to
     *
     * @return the new zone on success
     */
@@ -93,8 +95,8 @@ class PointHqClient extends AbstractClient
     /**
     * Update a zone
     *
-    * @param int   $zone zone id
-    * @param array $data data to update, you cannot update the name/domain
+    * @param integer $zone zone id
+    * @param array   $data data to update, you cannot update the name/domain
     *
     * @return the new zone on success
     */
@@ -108,7 +110,7 @@ class PointHqClient extends AbstractClient
     /**
     * Delete a zone
     *
-    * @param int $zone zone id    
+    * @param integer $zone zone id    
     *
     * @return true on success
     */
@@ -123,36 +125,39 @@ class PointHqClient extends AbstractClient
 
     /**
     * Get records for a zone
-    * @param int $zone zone id
+    *
+    * @param integer $zone zone id
     *
     * @return an array of records
     */
-    function getZoneRecords($zone) {
+    function getZoneRecords($zone)
+    {
         return $this->get('/zones/' . $zone . '/records');
     }
 
     /**
     * Get a record for a zone
     *
-    * @param int $zone zone id
-    * @param int $record record id
+    * @param integer $zone   zone id
+    * @param integer $record record id
     *
     * @return the record
     */
-    function getZoneRecord($zone, $record) {
+    function getZoneRecord($zone, $record)
+    {
         return $this->get('/zones/' . $zone . '/records/' . $record);
     }
 
     /**
     * Create a record for a zone
     *
-    * @param int    $zone                zone id to add record to
-    * @param string $data                data for the record
-    * @param string $name                name for the record
-    * @param string $type                record type
-    * @param string $ttl                 record ttl
-    * @param string $redirect_to         record redirect to if a redirect
-    * @param string $redirection_counter record redirect counter
+    * @param integer $zone                zone id to add record to
+    * @param string  $data                data for the record
+    * @param string  $name                name for the record
+    * @param string  $type                record type
+    * @param string  $ttl                 record ttl
+    * @param string  $redirect_to         record redirect to if a redirect
+    * @param string  $redirection_counter record redirect counter
     * 
     * @return the created record
     */
@@ -180,9 +185,9 @@ class PointHqClient extends AbstractClient
     /**
     * Update a zone record
     *
-    * @param int   $zone   zone id
-    * @param int   $record record id
-    * @param array $data   data to update
+    * @param integer $zone   zone id
+    * @param integer $record record id
+    * @param array   $data   data to update
     *
     * @return the new zone on success
     */

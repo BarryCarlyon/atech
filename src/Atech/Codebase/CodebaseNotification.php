@@ -24,15 +24,15 @@ use Atech\Common\Notification\AbstractNotification;
  */
 class CodebaseNotification extends AbstractNotification
 {
-	/**
-	* grab data
-	*
-	* @return nothing
-	*/
-	function __construct()
-	{
-		parent::__construct();
+    /**
+    * grab data
+    *
+    * @return nothing
+    */
+    function __construct()
+    {
+        parent::__construct();
 
-		return json_decode($this->payload);
-	}
+        return json_decode($this->payload);
+    }
 }
