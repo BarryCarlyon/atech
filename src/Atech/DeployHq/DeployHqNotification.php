@@ -28,7 +28,7 @@ class DeployHqNotification extends AbstractNotification
 	* grab data
 	* validate the signature
 	*
-	* @return bool true on ok false not ok
+	* @return mixed packet on ok false not ok
 	*/
 	function __construct()
 	{
@@ -36,6 +36,9 @@ class DeployHqNotification extends AbstractNotification
 
 		parent::__construct();
 
-		return $this->validateSignature();
+		if ($this->validateSignature()) {
+			return json_decode($this->payload);
+		}
+		return false;
 	}
 }

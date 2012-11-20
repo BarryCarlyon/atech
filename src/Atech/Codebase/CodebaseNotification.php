@@ -32,5 +32,7 @@ class CodebaseNotification extends AbstractNotification
 	function __construct()
 	{
 		parent::__construct();
+
+		return json_decode($this->payload);
 	}
 }
