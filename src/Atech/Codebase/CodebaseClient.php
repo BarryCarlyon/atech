@@ -668,4 +668,34 @@ class CodebaseClient extends AbstractClient
     {
         return $this->delete($permalink . '/time_sessions/' . $session_id, 'time-session');
     }
+
+    /**
+    Wiki
+    */
+
+    /**
+    * Get all Wiki Pages for a project
+    *
+    * @param string $permalink project shortname/permalink *required
+    *
+    * @return mixed a set of wiki pages or false on fail
+    */
+    public function getProjectWikiPages($permalink)
+    {
+        return $this->get($permalink . '/wiki/index', 'wiki-page');
+    }
+
+    /**
+    * Get a specific Wiki Pages for a project
+    *
+    * @param string $permalink project shortname/permalink *required
+    * @param string $pagelink  page permalink
+    *
+    * @return mixed the wiki pages or false on fail
+    */
+    public function getProjectWikiPage($permalink, $pagelink)
+    {
+        return $this->get($permalink . '/wiki/' . $pagelink, 'wiki-page');
+    }
+
 }
