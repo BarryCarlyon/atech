@@ -51,7 +51,7 @@ class CodebaseClient extends AbstractClient
     *
     * @return an array of events
     */
-    public function activity()
+    public function listActivity()
     {
         return $this->activityRepair($this->get('activity', 'event'));
     }
@@ -63,7 +63,7 @@ class CodebaseClient extends AbstractClient
     *
     * @return array of events
     */
-    public function projectActivity($permalink)
+    public function listProjectActivity($permalink)
     {
         return $this->activityRepair($this->get($permalink . '/activity', 'event'));
     }
@@ -93,7 +93,7 @@ class CodebaseClient extends AbstractClient
     *
     * @return an array of projects
     */
-    public function projects()
+    public function listProjects()
     {
         return $this->get('projects', 'project');
     }
@@ -105,7 +105,7 @@ class CodebaseClient extends AbstractClient
     *
     * @return a single project
     */
-    public function project($permalink)
+    public function getProject($permalink)
     {
         return $this->get($permalink);
     }
@@ -142,9 +142,21 @@ class CodebaseClient extends AbstractClient
     * @return array of group objects
     *               (containinng a dynamic ID (can change) and the name)
     */
-    public function projectGroups()
+    public function listProjectGroups()
     {
         return $this->get('project_groups', 'project-group');
+    }
+
+    /**
+    * Project User Assignments
+    *
+    * @param string $permalink permalink to project
+    *
+    * @return user objects
+    */
+    public function listProjectAssignments($permalink)
+    {
+        return $this->get($permalink . '/assignments', 'user');
     }
 
     /**
@@ -157,11 +169,8 @@ class CodebaseClient extends AbstractClient
     *
     * @return user objects
     */
-    public function projectAssignments($permalink, $users = false)
+    public function setProjectAssignments($permalink, $users = false)
     {
-        if ($users === false) {
-            return $this->get($permalink . '/assignments', 'user');
-        }
         $xml = '<users>';
         foreach ($users as $user) {
             $xml .= '<user><id>' . $user . '</id></user>';
@@ -181,7 +190,7 @@ class CodebaseClient extends AbstractClient
     *
     * @return an array of repository objects
     */
-    public function projectRepositories($permalink)
+    public function listProjectRepositories($permalink)
     {
         return $this->get($permalink . '/repositories', 'repository');
     }
@@ -195,7 +204,7 @@ class CodebaseClient extends AbstractClient
     *
     * @return a single repositrory object (specifc keys to the repo_type)
     */
-    public function createRepository($permalink, $repo_name, $repo_type = 'git')
+    public function createProjectRepository($permalink, $repo_name, $repo_type = 'git')
     {
         $xml = '<repository><name>' . $repo_name . '</name>
             <scm>' . $repo_type . '</scm>
@@ -211,7 +220,7 @@ class CodebaseClient extends AbstractClient
     *
     * @return a single repo object
     */
-    public function projectRepository($permalink, $repo)
+    public function getProjectRepository($permalink, $repo)
     {
         return $this->get($permalink . '/' . $repo);//, 'repository');
     }
@@ -225,7 +234,7 @@ class CodebaseClient extends AbstractClient
     *
     * @return bool|excpetion true or thrown error
     */
-    public function deleteRepository($permalink, $repo_name)
+    public function deleteProjectRepository($permalink, $repo_name)
     {
         return $this->delete($permalink . '/' . $repo_name);
     }
@@ -248,7 +257,7 @@ class CodebaseClient extends AbstractClient
     *
     * @return array a set of commits
     */
-    public function commits($permalink, $repo, $ref, $file = '')
+    public function listProjectRepositoryCommits($permalink, $repo, $ref, $file = '')
     {
         if ($file) {
             $file = '/' . $file;
@@ -272,7 +281,7 @@ class CodebaseClient extends AbstractClient
     *
     * @return a single deployment object
     */
-    public function createDeployment($permalink, $repository, $branch, $revision, $servers, $environment = 'production')
+    public function createProjectRespositoryDeployment($permalink, $repository, $branch, $revision, $servers, $environment = 'production')
     {
         $xml = '<deployment>
     <branch>' . $branch . '</branch>
@@ -301,7 +310,7 @@ class CodebaseClient extends AbstractClient
     *
     * @return a hook object
     */
-    public function getHooks($permalink, $repository) {
+    public function getProjectRepositoryHooks($permalink, $repository) {
         return $this->get($permalink . '/' . $repository . '/hooks', 'repository-hook');
     }
 
@@ -314,7 +323,7 @@ class CodebaseClient extends AbstractClient
     * @param string $username   username for basic auth if needed
     * @param string $password   password for basic auth if needed
     */
-    public function createHook($permalink, $repository, $url, $username = false, $password = false)
+    public function createProjectRepositoryHook($permalink, $repository, $url, $username = false, $password = false)
     {
         $xml = '<repository-hook>
     <url>' . $url . '</url>
