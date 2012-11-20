@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright 2010-2012 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+ * Copyright 2012 Barry Carlyon. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License").
  * You may not use this file except in compliance with the License.
@@ -26,6 +26,7 @@ class CodebaseClient extends AbstractClient
 {
     static $url = 'https://api3.codebasehq.com/';
     static $dataType = 'application/xml';
+    private $hostname = '';
 
     /**
     * Spawn
@@ -37,6 +38,7 @@ class CodebaseClient extends AbstractClient
     */
     public function __construct($apiuser, $apikey)
     {
+        list($this->hostname, $user) = explode('/', $apiuser);
         return parent::build(CodebaseClient::$dataType, CodebaseClient::$url, $apiuser, $apikey);
     }
 
@@ -51,7 +53,7 @@ class CodebaseClient extends AbstractClient
     */
     public function activity()
     {
-        return $this->get('activity', 'event');
+        return $this->activityRepair($this->get('activity', 'event'));
     }
 
     /**
@@ -63,7 +65,15 @@ class CodebaseClient extends AbstractClient
     */
     public function projectActivity($permalink)
     {
-        return $this->get($permalink . '/activity', 'event');
+        return $this->activityRepair($this->get($permalink . '/activity', 'event'));
+    }
+
+    private function activityRepair($data) {
+        // repair
+        foreach ($data->event as &$entry) {
+            $entry = str_replace('<a href="', '<a href="https://' . $this->hostname . '.codebasehq.com', $entry);
+        }
+        return $data;
     }
 
     /**
