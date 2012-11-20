@@ -305,8 +305,8 @@ class CodebaseClient extends AbstractClient
     /**
     * Get all hooks for a repository
     *
-    * @param string $permalink   project shortname/permalink *required
-    * @param string $repository  repository shortname/permalink *required
+    * @param string $permalink  project shortname/permalink *required
+    * @param string $repository repository shortname/permalink *required
     *
     * @return a hook object
     */
@@ -331,5 +331,214 @@ class CodebaseClient extends AbstractClient
     ' . ($password ? '<password>' . $password . '</password>' : '') . '
 </repository-hook>';
         return $this->post($permalink . '/' . $repository . '/hooks', $xml, 'repository-hook');
+    }
+
+    /**
+    Tickets
+    */
+
+    /**
+    * Get all ticket for a project
+    *
+    * @param string $permalink project shortname/permalink *required
+    * @param string $search    optional search parameters
+    * @param string $page      page number to retrieve, its paginated in groups of 20
+    *
+    * @return array a set of tickets
+    */
+    public function listProjectTickets($permalink, $search = '', $page = 0)
+    {
+        if ($search) {
+            $search = '?query=' . $search;
+        }
+        if ($page > 1) {
+            $num = $page;
+            if ($search) {
+                $page = '&';
+            } else {
+                $page = '?';
+            }
+            $page .= 'page=' . $num;
+        }
+        return $this->get($permalink . '/tickets' . $search . $page, 'ticket');
+    }
+
+    /**
+    * Create a ticket on a project
+    *
+    * Valid Keys
+    * summary
+    * description
+    * ticket-type normally one of bug, enhancement or task (defaults to bug)
+    * reporter-id ID of the user who reports the ticket
+    * assignee-id ID of the user to assign the ticket to (optional)
+    * category-id ID of the category to assign (use listProjectTicketCategories) (optional)
+    * priority-id ID of the priority to assign (use listProjectTicketPriorities) (optional defailts to middle state)
+    * status-id ID of the status to assign (use listProjectTicketStatuses) (optional defaults to new state)
+    * milestone-id ID of the milestone to assign (use listProjectTicketMilestones) (optional)
+    *
+    * @param string $permalink project shortname/permalink *required
+    * @param array  $data      data packet for ticket
+    *
+    * @return mixed the created ticket or false on error
+    */
+    public function createProjectTicket($permalink, $data)
+    {
+        $xml = '<ticket>';
+        foreach ($data as $item => $value) {
+            $xml .= '<' . $item . '><![CDATA[' . $value . ']]></' . $item . '>';
+        }
+        $xml .= '</ticket>';
+
+        return $this->post($permalink . '/tickets', $xml);
+    }
+
+    /**
+    * List project ticket available states
+    *
+    * @param string $permalink project shortname/permalink *required
+    *
+    * @return mixed a set of ticketing-status of false on error
+    */
+    public function listProjectTicketStatuses($permalink)
+    {
+        return $this->get($permalink . '/tickets/statuses', 'ticketing-status');
+    }
+
+    /**
+    * List project ticket available priorities
+    *
+    * @param string $permalink project shortname/permalink *required
+    *
+    * @return mixed a set of ticketing-status of false on error
+    */
+    public function listProjectTicketPriorities($permalink)
+    {
+        return $this->get($permalink . '/tickets/priorities', 'ticketing-priority');
+    }
+
+    /**
+    * List project ticket available categories
+    *
+    * @param string $permalink project shortname/permalink *required
+    *
+    * @return mixed a set of ticketing-status of false on error
+    */
+    public function listProjectTicketCategories($permalink)
+    {
+        return $this->get($permalink . '/tickets/categories', 'ticketing-category');
+    }
+
+    /**
+    * Get notes on a ticket
+    *
+    * @param string $permalink  project shortname/permalink *required
+    * @param integer $ticket_id ticket ID
+    *
+    * @return mixed the updated ticket or false on error
+    */
+    public function listProjectTicketNotes($permalink, $ticket_id)
+    {
+        return $this->get($permalink . '/tickets/' . $ticket_id . '/notes', 'ticket-note');
+    }
+
+    /**
+    * Get a specific note on a ticket
+    *
+    * @param string $permalink  project shortname/permalink *required
+    * @param integer $ticket_id ticket ID
+    * @param integer $note_id   note ID
+    *
+    * @return mixed the updated ticket or false on error
+    */
+    public function getProjectTicketNote($permalink, $ticket_id, $note_id)
+    {
+        return $this->get($permalink . '/tickets/' . $ticket_id . '/notes/' . $note_id, 'ticket-note');
+    }
+
+    /**
+    * Create a note for a ticket on a project
+    * this will also update the primary ticket of the note stream
+    *
+    * @param string  $permalink   project shortname/permalink *required
+    * @param integer $ticket_id   ticket ID
+    * @param array   $note_data   data packet for note
+    * @param array   $ticket_data data packet to update the primary ticket *optional for no changes to make
+    *                               status-id
+    *                               priority-id
+    *                               category-id
+    *                               assignee-id
+    *                               milestone-id
+    *                               summary
+    *
+    * @return mixed the ticket? or false
+    */
+    public function createProjectTicketNote($permalink, $ticket_id, $note_data, $ticket_data = array())
+    {
+        $xml = '<ticket-note>';
+        if (isset($note_data['content']) && $note_data['content']) {
+            $xml .= '<content><![CDATA[' . $note_data['content'] . ']]></content>'; 
+        }
+        if (isset($note_data['time-added']) && $note_data['time-added']) {
+            $xml .= '<time-added>' . $note_data['time-added'] . '</time-added>'; 
+        }
+        if (count($ticket_data)) {
+            $xml .= '<changes>';
+            foreach ($ticket_data as $item => $value) {
+                $xml .= '<' . $item . '>';
+                if ($item == 'summary') {
+                    $xml .= '<![CDATA[' . $value . ']]>';
+                } else {
+                    $xml .= $value;
+                }
+                $xml .= '</' . $item . '>';
+            }
+            $xml .= '</changes>';
+        }
+        $xml .= '</ticket-note>';
+
+        return $this->post($permalink . '/tickets/' . $ticket_id . '/notes', $xml);
+    }
+
+    /**
+    * Get all Milestones for a project
+    *
+    * @param string  $permalink   project shortname/permalink *required
+    *
+    * @return a set of milestones
+    */
+    public function listProjectMilestones($permalink)
+    {
+        return $this->get($permalink . '/milestones', 'ticketing-milestone');
+    }
+
+    /**
+    * Who is watching this ticket?
+    *
+    * @param string  $permalink   project shortname/permalink *required
+    * @param integer $ticket_id   ticket ID
+    *
+    * @return a set of watchers (a user ID/username per item)
+    */
+    public function listProjectTicketWatchers($permalink, $ticket_id)
+    {
+        return $this->get($permalink . '/tickets/' . $ticket_id . '/watchers', 'watcher');
+    }
+
+    /**
+    Ticket attachements
+    http://support.codebasehq.com/kb/api-documentation/tickets-and-milestones/attachments
+    */
+
+    /**
+    * Get all time sessions for a project
+    * 
+    * @param string $permalink   project shortname/permalink *required
+    *
+    * @return mixed a set of time sessions or false
+    */
+    public function listProjectTimeSessions($permalink)
+    {
+
     }
 }
