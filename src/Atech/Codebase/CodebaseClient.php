@@ -331,6 +331,8 @@ class CodebaseClient extends AbstractClient
     * @param string $url        url to post to *required
     * @param string $username   username for basic auth if needed
     * @param string $password   password for basic auth if needed
+    *
+    * @return mixed the created object of false on fail
     */
     public function createProjectRepositoryHook($permalink, $repository, $url, $username = false, $password = false)
     {
@@ -548,6 +550,122 @@ class CodebaseClient extends AbstractClient
     */
     public function listProjectTimeSessions($permalink)
     {
+        return $this->get($permalink . '/time_sessions', 'time-session');
+    }
 
+    /**
+    * Get all time sessions added to a project today
+    * 
+    * @param string $permalink project shortname/permalink *required
+    *
+    * @return mixed a set of time sessions or false
+    */
+    public function listProjectTimeSessionsDay($permalink)
+    {
+        return $this->get($permalink . '/time_sessions/day', 'time-session');
+    }
+
+    /**
+    * Get all time sessions added to a project this week
+    * 
+    * @param string $permalink project shortname/permalink *required
+    *
+    * @return mixed a set of time sessions or false
+    */
+    public function listProjectTimeSessionsWeek($permalink)
+    {
+        return $this->get($permalink . '/time_sessions/week', 'time-session');
+    }
+
+    /**
+    * Get all time sessions added to a project this month
+    * 
+    * @param string $permalink project shortname/permalink *required
+    *
+    * @return mixed a set of time sessions or false
+    */
+    public function listProjectTimeSessionsMonth($permalink)
+    {
+        return $this->get($permalink . '/time_sessions/month', 'time-session');
+    }
+
+    /**
+    * Create a new Time Session for a project
+    *
+    * @param string $permalink project shortname/permalink *required
+    * @param array  $data      data packet for time session
+    *                          summary required
+    *                          minutes required
+    *                          session-date *optional users today otherwise
+    *                                       format is yyyy-mm-dd
+    *
+    * @return mixed created time session of false
+    */
+    public function addProjectTimeSession($permalink, $data)
+    {
+        $xml = '<time-session>';
+        $xml .= '<summary><![CDATA[' . $data['summary'] . ']]></summary>';
+        $xml .= '<minutes>' . $data['minutes'] . '</minutes>';
+        if (isset($data['session-date']) && $data['session-date']) {
+            $xml .= '<session-date>' . $data['session-date'] . '</session-date>';
+        }
+        $xml .= '</time-session>';
+
+        return $this->post($permalink . '/time_sessions', $xml);
+    }
+
+    /**
+    * Fetch a specific project time session
+    *
+    * @param string  $permalink  project shortname/permalink *required
+    * @param integer $session_id the session id to fetch
+    *
+    * @return mixed the time session or false on fail
+    */
+    public function getProjectTimeSession($permalink, $session_id)
+    {
+        return $this->get($permalink . '/time_sessions/' . $session_id, 'time-session');
+    }
+
+    /**
+    * Update a Time Session for a project
+    *
+    * @param string  $permalink  project shortname/permalink *required
+    * @param integer $session_id the session id to fetch
+    * @param array   $data       data packet for time session
+    *                            summary 
+    *                            minutes 
+    *                            session-date format is yyyy-mm-dd
+    *
+    * @return mixed created time session of false
+    */
+    public function updateProjectTimeSession($permalink, $session_id, $data)
+    {
+        $xml = '<time-session>';
+        if (isset($data['summary']) && $data['summary']) {
+            $xml .= '<summary><![CDATA[' . $data['summary'] . ']]></summary>';
+        }
+        if (isset($data['minutes']) && $data['minutes']) {
+            $xml .= '<minutes>' . $data['minutes'] . '</minutes>';
+        }
+        if (isset($data['session-date']) && $data['session-date']) {
+            $xml .= '<session-date>' . $data['session-date'] . '</session-date>';
+        }
+        $xml .= '</time-session>';
+
+        return $this->put($permalink . '/time_sessions/' . $session_id, $xml);
+    }
+
+    /**
+    * Delete a specific project time session
+    *
+    * @param string  $permalink  project shortname/permalink *required
+    * @param integer $session_id the session id to fetch
+    *
+    * @return mixed the time session or false on fail
+    */
+    public function deleteProjectTimeSession($permalink, $session_id)
+    {
+        return $this->delete($permalink . '/time_sessions/' . $session_id, 'time-session');
     }
 }
